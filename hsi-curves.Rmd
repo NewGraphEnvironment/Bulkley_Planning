@@ -1,0 +1,60 @@
+---
+title: "Bulkley Salmonid Habitat Suitability Index Curves"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+library(scales)
+```
+
+## Habitat Preference Curves
+
+```{r functions, echo=FALSE}
+
+hsi_gradient <- function(x) {
+  approx(c(0,0.02, 0.2), y = c(1,1,0), xout = x, yleft = NA_real_, yright = 0, na.rm = FALSE)$y
+}
+
+hsi_watershed_area <- function(x) {
+  approx(c(0,4,20), y = c(0,0.1,1), xout = x, yleft = NA_real_, yright = 1, na.rm = FALSE)$y
+}
+
+hsi_elevation <- function(x) {
+  approx(c(0,250,400,500,600,750,1300), y = c(0.5,0.75,0.95,1,0.95,0.75,0), xout = x, yleft = NA_real_, yright = 0, na.rm = FALSE)$y
+}
+```
+
+```{r data, echo = FALSE}
+gradient <- data.frame(x = seq(0, 0.3, length.out = 30))
+gradient$HSI <- hsi_gradient(gradient$x)
+
+watershed_area <- data.frame(x = seq(0, 25, length.out = 30))
+watershed_area$HSI <- hsi_watershed_area(watershed_area$x)
+
+elevation <- data.frame(x = seq(0, 1500, length.out = 30))
+elevation$HSI <- hsi_elevation(elevation$x)
+```
+
+```{r plots, echo=FALSE, fig.width = 4, fig.height= 4}
+ggplot(data = gradient) +
+  aes(x = x, y = HSI) +
+  expand_limits(y = c(0, 1)) +
+  geom_line() +
+  scale_x_continuous("Gradient (%)", labels = percent)
+
+ggplot(data = watershed_area) +
+  aes(x = x, y = HSI) +
+  expand_limits(y = c(0, 1)) +
+  geom_line() +
+  scale_x_continuous("Watershed Area (km2)")
+
+ggplot(data = elevation) +
+  aes(x = x, y = HSI) +
+  expand_limits(y = c(0, 1)) +
+  geom_line() +
+  scale_x_continuous("Elevation (masl)")
+```
