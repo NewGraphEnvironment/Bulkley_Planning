@@ -1,5 +1,8 @@
-## Load a set of misc crossings to postgres,
-## join to crossing model and pscis where possible (within 50m)
+## Load a set of misc crossings to postgres, then
+## join each point to nearest pscis points / modelled crossing point
+## Return everything to pscis_info df, filter out points that are too far away
+## (maybe 50-100m) in R  - manual review of matches that are not within a few
+## metres should also be done
 
 library(DBI)
 library(tidyverse)
@@ -32,7 +35,7 @@ dbClearResult(res)
 res <- dbSendQuery(conn, "ALTER TABLE working.misc_points ADD PRIMARY KEY (misc_point_id)")
 dbClearResult(res)
 
-# if pscis_model_combined does not have an index on the geom, run this
+# if fish_passage.pscis_model_combined does not have an index on the geom, run this
 #res <- dbSendQuery(conn, "CREATE INDEX ON fish_passage.pscis_model_combined USING GIST (geom)", n=0)
 #dbClearResult(res)
 
