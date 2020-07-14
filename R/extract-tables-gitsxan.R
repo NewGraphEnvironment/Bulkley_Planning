@@ -2,11 +2,12 @@
 
 {
   library(tidyverse)
-  library(readwritesqlite)
+  # library(readwritesqlite)
   library(data.table)
   library(sf)
   library(readxl)
-  library(tabulizer)
+  library(googledrive)
+  # library(tabulizer)
 }
 
 ##-------now for the Gitxsanreport
@@ -14,7 +15,7 @@
 ##we could not digitize the tables from the pdf so Alicia from Gitsxan forwarded a bunch of files including the raw excel file!
 
 ##this is the path to the 2015 data
-path <- "C:/Users/allan/OneDrive/New_Graph/Current/2019-023_Bulkley_fish_passage/data/FHRI 2015 Priority Fish Passage Barrier Reporting/Copy of Final_List of High priority FP sites_May 21_2015_MM.xls"
+path <- "data/Copy of Final_List of High priority FP sites_May 21_2015_MM.xls"
 
 gitxsan_reporting_all_2015 <-  path %>% 
   readxl::excel_sheets() %>% 
@@ -24,7 +25,8 @@ gitxsan_reporting_all_2015 <-  path %>%
              .name_repair = janitor::make_clean_names) 
 
 gitxsan_summary_2015 <- gitxsan_reporting_all_2015 %>% 
-  pluck(1)
+  pluck(1) %>% 
+  mutate(map_ref_number = as.integer(map_ref_number))
   # sf::st_as_sf(coords = c("easting", "northing"), ##hashed out for now
   #              crs = 26909, remove = F)
 
@@ -38,12 +40,13 @@ gitxsan_summary_2015 <- gitxsan_reporting_all_2015 %>%
 # con = dbConnect(db,"C:/Users/allan/OneDrive/New_Graph/Current/GIS/projects/2019-011_SERNbc_capacity/layers/bulkley.gpkg")
 # dbRemoveTable(con, "gitsxan")
 
-st_layers("C:/Users/allan/OneDrive/New_Graph/Current/GIS/projects/2019-011_SERNbc_capacity/layers/bulkley.gpkg")
+# st_layers("C:/Users/allan/OneDrive/New_Graph/Current/GIS/projects/2019-011_SERNbc_capacity/layers/bulkley.gpkg")
 
 
 ###-----------------2016
 ##this is the path to the 2016 data
-path <- "C:/Users/allan/OneDrive/New_Graph/Current/2019-023_Bulkley_fish_passage/data/GWA Priority Site List_May 13, 2016.xlsx"
+path <- "data/GWA Priority Site List_May 13, 2016.xlsx"
+# path <- "C:/Users/allan/OneDrive/New_Graph/Current/2019-023_Bulkley_fish_passage/data/GWA Priority Site List_May 13, 2016.xlsx"
 
 gitxsan_reporting_all_2016 <-  path %>% 
   readxl::excel_sheets() %>% 
@@ -75,10 +78,18 @@ gitxsan_reporting_2016_join <- gitxsan_reporting_all_2016[1:8] %>% ##grab the fi
              northing = as.integer(northing),
              map_ref_number = as.integer(map_ref_number),
              est_habitat_gain_m = as.numeric(est_habitat_gain_m))
-  })
+  }) %>% 
+  distinct(map_ref_number, .keep_all = T)  ##we need to remove duplicates. We checked a few and assume they are the same as first occurance.
 
 ##join the 2015 and the 2016 data together but only keep new columns from 2016
 col_2016 <- setdiff(names(gitxsan_reporting_all_2016 %>% pluck(1)),names(gitxsan_summary_2015)) ##a few columns to add
+
+##below were tests to figure out what was going on.
+# col_2016a <- setdiff(names(gitxsan_reporting_2016_join),names(gitxsan_summary_2015)) ##a few columns to add
+# identical(col_2016, col_2016a)
+# n_distinct(gitxsan_summary_2015$map_ref_number)
+# n_distinct(gitxsan_reporting_2016_join$map_ref_number)
+# n_distinct(setdiff(gitxsan_summary_2015$map_ref_number,gitxsan_reporting_2016_join$map_ref_number)) + 77
 
 gitxan_joined <- left_join(
   gitxsan_summary_2015,
@@ -93,9 +104,8 @@ gitxsan_summary <- gitxan_joined %>%
                          crs = 26909, remove = F)
   
 
-##burn to a geopackage for now
-##burn to a geopackage for now
-sf::st_write(gitxsan_summary, "gis/bulkley_fish_passage_background.gpkg", "gitxsan")
 
-##we need to join to the pscis data then to the fish habitat model ouputs - leave for now - enough for today
+##burn to a geopackage for now
+sf::st_write(gitxsan_summary, "data/gis/bulkley_fish_passage_background.gpkg", "gitxsan", delete_layer = T)
+
 

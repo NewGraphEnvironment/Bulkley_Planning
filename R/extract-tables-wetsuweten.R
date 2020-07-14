@@ -9,7 +9,7 @@
   library(tabulizer)
 }
 
-path <- "C:/Users/allan/OneDrive/New_Graph/Current/2019-023_Bulkley_fish_passage/background/Assessing Barriers to fish passage within the WFN traditional territory 2018.pdf"
+path <- "data/Assessing Barriers to fish passage within the WFN traditional territory 2018.pdf"
 
 
 ##define the area to extract table from for first page
