@@ -56,7 +56,7 @@ I have attached an excel file with a complete list of potential sites, details a
 ##bring in the priority info
 # read the geopackage
 df <- sf::st_read(
-  "data/gis/fish_passage_skeena_20200714.gpkg",
+  "data/gis/fish_passage_skeena_20200714.gpkg",  ##this path does not work anymore b/c rmd files ref diff
   layer = "xings_bulk_morr_wet") %>% 
   mutate(long = st_coordinates(.)[,1],
          lat = st_coordinates(.)[,2]) %>% 

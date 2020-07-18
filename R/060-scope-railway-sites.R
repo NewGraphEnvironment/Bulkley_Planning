@@ -22,7 +22,7 @@ conn <- dbConnect(
 dbGetQuery(conn,
            "SELECT column_name,data_type 
            FROM information_schema.columns 
-           WHERE table_name='pscis_model_combined'")
+           WHERE table_name='misc_points'")
 
 railway <- dbGetQuery(conn, "
 SELECT
@@ -92,8 +92,6 @@ AND r.distance_to_railway < 25")
 df <- sf::st_read(
   "data/gis/fish_passage_skeena_20200714.gpkg",
   layer = "xings_bulk_morr_wet") %>% 
-  mutate(long = st_coordinates(.)[,1],
-         lat = st_coordinates(.)[,2]) %>% 
   sf::st_transform(crs = 3005) ##put in same crs as our moe layer
 
 ##join the railway info to the geopackage 
@@ -115,3 +113,30 @@ test <- df_joined %>%
 
 ##here is a list of crossings that have cn rail associated
 ##33264 - Barren Ck - sfc - site A#6
+
+test <- df %>% filter(watershed_area_ha > 4000)
+
+##going to joion to ecosections but should do in the 040 - join file
+# add a unique id
+df$misc_point_id <- seq.int(nrow(df))
+
+# load to database
+st_write(obj = df, dsn = conn, Id(schema= "working", table = "misc_points"))
+
+# sf doesn't automagically create a spatial index or a primary key
+res <- dbSendQuery(conn, "CREATE INDEX ON working.misc_points USING GIST (geom)")
+dbClearResult(res)
+res <- dbSendQuery(conn, "ALTER TABLE working.misc_points ADD PRIMARY KEY (misc_point_id)")
+dbClearResult(res)
+
+df_info <- dbGetQuery(conn, "SELECT a.misc_point_id, moe.ecosection_name
+FROM working.misc_points a, whse_terrestrial_ecology.erc_ecosections_sp moe
+WHERE ST_Intersects(a.geom, moe.geom);")
+
+dbGetQuery(conn, "select UpdateGeometrySRID('whse_terrestrial_ecology', 'erc_ecosections_sp', 'geom', 3005);")
+dbGetQuery(conn, "SELECT Find_SRID('whse_terrestrial_ecology', 'erc_ecosections_sp', 'geom');")
+
+
+
+
+df %>% select(contains('misc'))
