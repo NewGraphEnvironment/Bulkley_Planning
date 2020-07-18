@@ -498,7 +498,19 @@ sf::st_write(crossing_watersheds_joined_high, "./data/gis/fish_passage_skeena_20
 sf::st_write(df_joined, "./data/gis/fish_passage_skeena_20200714.gpkg", "xings_skeena_all", delete_layer = T) 
 sf::st_write(df_joined_high, "./data/gis/fish_passage_skeena_20200714.gpkg", "xings_bulk_morr_wet", delete_layer = T)
 
-##we need a summary for the fish permit application
-##we need to make sure we get the moe region correct so check
+##we need to modify the skeena layer so that the mod priorities do not clog up the file for Alicia and others
+##intereseted in the areas outside the bulk/morr
+# read the geopackage
+sf::st_layers(
+  "data/gis/fish_passage_skeena_20200714.gpkg")
+df <- sf::st_read(
+  "data/gis/fish_passage_skeena_20200714.gpkg",
+  layer = "xings_skeena_all") %>% 
+  filter(priority_moe %in% c('high') |
+           (!is.na(map_id_wetsuweten) & 
+              (!watershed_group_code %ilike% 'FRAN'))|
+           (!is.na(map_ref_number_sfc) & !watershed_group_code %ilike% 'FRAN')) 
+# st_write(obj = df, dsn = conn, Id(schema= "working", table = "my_pscis_fn_joined_high_skeena"))
+# sf::st_write(df, "./data/gis/fish_passage_skeena_20200714.gpkg", "xings_skeena_bulk_high", delete_layer = T)
 
 
