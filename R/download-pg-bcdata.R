@@ -16,13 +16,19 @@
 }
 
 ##here we type our search term in to look for layers. Could use bcdc_browse() 
-info <- bcdc_search("ecosections-ecoregion-ecosystem-classification-of-british-columbia", type = "Geographic", n = 83)
+info <- bcdc_search("bc-points-of-diversion", type = "Geographic", n = 83)
 
 #ecosections-ecoregion-ecosystem-classification-of-british-columbia : ccc01f43-860d-4583-8ba4-e72d8379441e
+#utm-zones-of-british-columbia
+#water-rights-licences-public :5549cae0-c2b1-4b96-9777-529d9720803c
 
-
+##should start a lookup table for these layers
+get_this <- bcdc_tidy_resources("water-rights-licences-public") %>% 
+  filter(bcdata_available == T)  %>% 
+  pull(package_id)
+  
 ##name the layer you want to download
-get_this <- "ccc01f43-860d-4583-8ba4-e72d8379441e"
+# get_this <- "ccc01f43-860d-4583-8ba4-e72d8379441e"
 
 ##now lets bring the layer into R and drop it into the database in one step
 bcdatapg <- function(get_this)

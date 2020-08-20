@@ -2,7 +2,7 @@
 title: 
 output:
   bookdown::word_document2:
-    reference_docx: C:/Users/allan/OneDrive/New_Graph/Current/Code/R/Templates/RMDTemplates/R/word_template.docx
+    reference_docx: C:/Users/allan/OneDrive/New_Graph/Current/Code/R/Templates/RMDTemplates/R/word_template_landscape.docx
     bibliography: references.bib
     toc: no
     fig_caption: yes
@@ -42,25 +42,30 @@ Rationale for sampling is to inform fish presence/absence and species compositio
 (https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/land-based-investment/investment-categories/fish-passage). Background planning and maps for the project is summarized in a 2018 report located at https://data.skeenasalmon.info/ar/dataset/fish-passage-site-prioritization-maps-bulkley-river. Additional information has been source from Gitxsan Watershed Authority and Wet'suwet'en fisheries.
 
 
-Presence/absence of fish, species composition/density and distribution limits can be useful for prioritizing which crossings are a best fit for fish passage restoration and help inform follow up monitoring.  Sampling is proposed at a portion of the 15 - 20 or so sites we will be performing habitat confirmations at this summer.  The current list of candidate streams is extensive and will be narrowed down to under 30 in the next 5 weeks through modeling, ongoing communications with Wet'suwet'en, Skeena Fisheries Commission, DFO, Gitxsan Watershed Authority, FLNR and other stakeholders.
+Presence/absence of fish, species composition/density and distribution limits can be useful for prioritizing which crossings are a best fit for fish passage restoration and help inform follow up monitoring.  Sampling is proposed at a portion of the 15 - 20 or so sites we will be performing habitat confirmations at this summer.  The current list of candidate streams is extensive and will be narrowed down to under 30 in the next 5 weeks through modeling, ongoing communications with Wet'suwet'en, Skeena Fisheries Commission, DFO, Gitxsan Watershed Authority, FLNR and  stakeholders.
 
 
-It is unlikely that sampling will be conducted at more than 10 of the streams listed in the sampling location tables however until the sites are visited in the field it is difficult to determine if the sampling will be beneficial to inform the prioritization and monitoring. Sampling methodologies will be dependent on the site, fish species suspected, type of habitat encountered and ongoing communications with numerous stakeholders but may include minnowtrapping, electrofishing, dipnetting and seining upstream and downstream of barrier culvert locations.
+It is unlikely that sampling will be conducted at more than 15 of the streams listed in the sampling location tables however until the sites are visited in the field it is difficult to determine if the sampling will be beneficial to inform the prioritization and monitoring. Sampling methodologies will be dependent on the site, fish species suspected, type of habitat encountered and ongoing communications with numerous stakeholders but may include minnowtrapping, electrofishing, dipnetting and seining upstream and downstream of barrier culvert locations.  
 
 
 Please note that the sampling will be completed before September 30, 2020 however the period is listed as Dec 31, 2020 on the application to allow time outside of the busy field season for the data to be processed, QA'd and organized so that required reporting can be as informative as possible and submitted to the Province as per the permit conditions before 90 days has expired. 
 
-I have attached an excel file with a complete list of potential sites, details and potential fish species encountered. Additionally, in response to a recomendation from David Dewit (Wet'suwet'en), I will be prepareing and submitting a letter seeking Wet’suwet’en consent for the work. Please don't hesitate to contact me if you have any questions or concerns at al@newgraphenvironment.com 2507771518.
+I have attached an excel file with a complete list of potential sites, details and potential fish species encountered. Also attached is a briefing note on the project and spatial files for your reference. Additionally, in response to a recommendation from David Dewit (Wet'suwet'en), I will be preparing and submitting a letter seeking Wet’suwet’en consent for the work. Myself (Allan Irvine, R.P.Bio.) and Kyle Prince, P.Biol will be conducted potentially most of the fieldwork however Gitxan Watershed Authority (Alicia Fernando and others) may also be conducting assessments.  Wet'suwet'en may also be conducting sampling in these streams as part of the greater fish passage restoration intiative in the watershed. Please don't hesitate to contact me if you have any questions or concerns at al@newgraphenvironment.com 2507771518.
 
 ```{r}
-##bring in the priority info
+
 # read the geopackage
 df <- sf::st_read(
-  "data/gis/fish_passage_skeena_20200714.gpkg",  ##this path does not work anymore b/c rmd files ref diff
-  layer = "xings_bulk_morr_wet") %>% 
+  "../data/gis/fish_passage_skeena_20200714.gpkg",  ##this path does not work anymore b/c rmd files ref diff
+  layer = "xings_skeena_bulk_high_owen") %>% 
   mutate(long = st_coordinates(.)[,1],
-         lat = st_coordinates(.)[,2]) %>% 
+         lat = st_coordinates(.)[,2]) %>%
+  sf::st_transform(crs = 26909) %>% ##get the utms
+  mutate(easting_9n = st_coordinates(.)[,1],
+         northing_9n = st_coordinates(.)[,2]) %>%
   sf::st_transform(crs = 3005) ##put in same crs as our moe layer
+
+# plot(df$geom)
 
 # add a unique id
 df$misc_point_id <- seq.int(nrow(df))
@@ -81,6 +86,8 @@ ON ST_Intersects(a.geom, moe.geom)
                  INNER JOIN whse_basemapping.fwa_watershed_groups_poly wsg
                              ON ST_Intersects(a.geom, wsg.geom)")
 
+# unique(df_info$watershed_group_code)
+# unique(df_info$region_name)
 
 ##looks like everything is in the Skeena region and bulk or morr which makes sense.
 #add the watershed group info because some are missing it (did not match modeled ids)
@@ -98,6 +105,16 @@ df <- left_join(
 # table
 ```
 
+```{r}
+fit_to_page_landscape <- function(ft, pgwidth = 12){
+  
+  ft_out <- ft %>% autofit()
+  
+  ft_out <- width(ft_out, width = dim(ft_out)$widths*pgwidth /(flextable_dim(ft_out)$widths))
+  return(ft_out)
+}
+```
+
 ```{r table-sites}
 permit_table <- df %>% 
   mutate(stream_moe = as.character(stream_moe),
@@ -110,33 +127,46 @@ permit_table <- df %>%
   mutate(comments = paste(comments_wetsuweten, comments_completion_details_sfc,
                                comments_moe),
          comments = stringr::str_replace_all(comments, 'NA', '')) %>% 
-  select(MoE_region = region_name, waterbody, watershed_code_50k, watershed_code_20k,
-         lat, long, uphab_gross_sub15_perc_km = uphab_gross_sub15_km, watershed_area_ha, upstr_species, comments,
-         image_view_url, pscis_model_combined_id:map_ref_number_sfc, misc_point_id)
-
+  select(watershed_group_code,MoE_region = region_name, waterbody, watershed_code_50k, watershed_code_20k,
+         easting_9n, northing_9n, uphab_gross_sub15_perc_km = uphab_gross_sub15_km, watershed_area_ha, upstr_species, comments,  image_view_url, road_name_corridor_wetsuweten:road_moe, pscis_model_combined_id:map_ref_number_sfc, misc_point_id)
 
 ```
 
-```{r}
 
-fit_to_page_landscape <- function(ft, pgwidth = 12){
-  
-  ft_out <- ft %>% autofit()
-  
-  ft_out <- width(ft_out, width = dim(ft_out)$widths*pgwidth /(flextable_dim(ft_out)$widths))
-  return(ft_out)
-}
-
+```{r table-safety}
 table <- permit_table %>% 
   st_set_geometry(NULL) %>% 
-  select(MoE_region:waterbody, lat, long, upstr_species,comments, misc_point_id) %>% 
+  select(wsg = watershed_group_code, waterbody, road_name_corridor_wetsuweten:road_moe, easting_9n, northing_9n, upstr_species,comments, pscis_model_combined_id.1:map_ref_number_sfc) %>% 
   flextable::flextable() %>%
   # flextable::my_theme_booktabs(fontsize = 12, left_just_cols = 2) %>%
   # flextable::autofit() %>%
   flextable::set_caption('Potential sampling site stream details.') %>%
-  flextable::width(j = 6, width = 2) %>% 
-  flextable::fontsize(., size = 9, part = "all") %>% 
-  fit_to_page_landscape()
+    flextable::fontsize(., size = 7, part = "all") %>% 
+  # flextable::autofit() %>% 
+  fit_to_page_landscape() %>% 
+  flextable::width(j = 9, width = 2) %>% 
+  flextable::width(j = c(1:7,10:12), width = 0.6) %>% 
+  flextable::width(j = c(5), width = 1)
+table
+```
+
+```{r}
+
+
+
+table <- permit_table %>% 
+  st_set_geometry(NULL) %>% 
+  select(MoE_region:waterbody, easting_9n, northing_9n, upstr_species,comments, misc_point_id) %>% 
+  flextable::flextable() %>%
+  # flextable::my_theme_booktabs(fontsize = 12, left_just_cols = 2) %>%
+  # flextable::autofit() %>%
+  flextable::set_caption('Potential sampling site stream details.') %>%
+    flextable::fontsize(., size = 8, part = "all") %>% 
+  # flextable::autofit() %>% 
+  fit_to_page_landscape() %>% 
+  flextable::width(j = 6, width = 4) %>% 
+  flextable::width(j = c(1,3,4,7), width = 0.75) %>% 
+  flextable::width(j = c(5), width = 1)
 table
 ```
 
@@ -213,15 +243,23 @@ fish_table <- fish_species_watershed %>%
 table <- flextable::flextable(fish_table) %>%
   # flextable::my_theme_booktabs(fontsize = 12, left_just_cols = 2) %>%
   flextable::autofit() %>%
+  flextable::fontsize(., size = 9, part = "all") %>% 
   flextable::set_caption('Fish species potentially encountered in Bulkley River watershed according to fisheries inventory summary records.')
 table
 
 ```
 
-```{r burn-xl}
-write.xlsx2(as.data.frame(permit_table), file=paste0(getwd(), "/docs/permit_details.xlsx"), sheetName="sampling_locations", append=FALSE, row.names=FALSE)
+```{r burn-xl, eval = F}
+write.xlsx2(as.data.frame(permit_table), file="../docs/permit_details.xlsx", sheetName="sampling_locations", append=FALSE, row.names=FALSE)
 ##this one needs to come from the "01_modelled_Part3.... file
-write.xlsx2(as.data.frame(fish_table), file="docs/permit_details.xlsx", sheetName="potential_species", append=TRUE, row.names=FALSE)
+write.xlsx2(as.data.frame(fish_table), file="../docs/permit_details.xlsx", sheetName="potential_species", append=TRUE, row.names=FALSE)
+
+##burn a spatial file too
+sf::st_write(permit_table, "../data/gis/fish_passage_permit_application.gpkg", "potential_sample_sites", delete_layer = F)
+
+```
+
+```{r}
 dbDisconnect(conn = conn)
 ```
 

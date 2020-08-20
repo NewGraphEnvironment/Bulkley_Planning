@@ -7,7 +7,6 @@ library(tidyverse)
 library(sf)
 library(RPostgres)
 library(data.table)
-
 # db connection
 conn <- dbConnect(
   RPostgres::Postgres(),
@@ -22,7 +21,7 @@ conn <- dbConnect(
 dbGetQuery(conn,
            "SELECT column_name,data_type 
            FROM information_schema.columns 
-           WHERE table_name='misc_points'")
+           WHERE table_name='utmg_utm_zones_sp'")
 
 railway <- dbGetQuery(conn, "
 SELECT
