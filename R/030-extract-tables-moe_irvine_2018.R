@@ -31,3 +31,4 @@ irvine_2018 <-  search_list  %>%
 sf::st_write(irvine_2018, "data/gis/bulkley_fish_passage_background.gpkg", "irvine_2018", delete_layer = T)
 
 
+#burn version for simon

@@ -1,0 +1,199 @@
+---
+title: "Bulkley River Watershed Group - Fish Passage Planning - Progress Report"
+author: "New Graph Environment"
+date: 
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source('R/packages.R')
+source("R/functions.R")
+```
+
+
+```{r import-pscis}
+##import the phase 1 data for CWF and turn into spatial file
+pscis_phase1_sf <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>% 
+  sf::st_as_sf(coords = c("easting", "northing"), 
+               crs = 26909, remove = F)
+  
+  
+##import phase 2 data and turn into spatial file
+pscis_phase2_sf <-  import_pscis() %>%  
+  sf::st_as_sf(coords = c("easting", "northing"), 
+               crs = 26909, remove = F)
+```
+
+```{r burn-kml}
+
+##this is how we make html tables.  Can add colors or whatever -https://stackoverflow.com/questions/50199845/converting-dataframe-in-required-html-table-format-in-r
+make_html_table <- function(df) {
+  df %>% 
+    mutate(html_tbl = knitr::kable(df) %>% 
+             # All cells get a border
+             row_spec(0:nrow(df), extra_css = "border: 1px solid black;") %>% 
+             row_spec(0, background = "yellow")) # header row in blue)
+}
+
+
+  
+##bring in the data, make a html table of each row
+df <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>%  
+  group_split(my_crossing_reference) %>% 
+  map(make_html_table) %>% 
+  bind_rows() %>% 
+  mutate_at(vars(easting:northing), as.numeric) ##need to have coords be numeric
+
+# df_list <- df %>% 
+#   map(make_html_table) %>% 
+#   bind_rows()
+
+##convert to spatialpointsdataframe
+sp::coordinates(df) <- ~ easting + northing
+sp::proj4string(df) <- sp::CRS("+init=epsg:32611")
+df_kml <- reproject(df) 
+
+
+##burn to kml
+
+##specify shape
+# shape = "http://maps.google.com/mapfiles/kml/pal2/icon18.png"
+shape = "http://maps.google.com/mapfiles/kml/paddle/A.png"
+
+kml_open("gis/outgoing/pscis_phase1.kml")
+kml_layer(df_kml, shape = shape, colour = barrier_result, labels = my_crossing_reference, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
+kml_close("gis/outgoing/pscis_phase1.kml")
+
+
+##now burn the phase 2 sites
+##bring in the data, make a html table of each row
+df <- import_pscis(workbook_name = 'pscis_phase2.xlsm') %>%  
+  group_split(my_crossing_reference) %>% 
+  map(make_html_table) %>% 
+  bind_rows() %>% 
+  mutate_at(vars(easting:northing), as.numeric) ##need to have coords be numeric
+
+# df_list <- df %>% 
+#   map(make_html_table) %>% 
+#   bind_rows()
+
+##convert to spatialpointsdataframe
+sp::coordinates(df) <- ~ easting + northing
+sp::proj4string(df) <- sp::CRS("+init=epsg:32611")
+df_kml <- reproject(df) 
+
+
+##burn to kml
+
+##specify shape
+shape = "http://maps.google.com/mapfiles/kml/paddle/C.png"
+
+kml_open("gis/outgoing/pscis_phase2.kml")
+kml_layer(df_kml, shape = shape, colour = barrier_result, labels = my_crossing_reference, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
+kml_close("gis/outgoing/pscis_phase2.kml")
+
+##now we will zip up the kml files in the data folder and rename with kmz
+files_to_zip <- paste0("gis/outgoing/", list.files(path = "gis/outgoing/", pattern = "\\.kml$"))  ##this used to includes the planning file which we don't want to do so watch out
+zip::zipr("gis/outgoing/elk_progress_kml.zip", files = files_to_zip)  ##it does not work to zip to kmz!!
+
+```
+
+
+## Overview Map
+
+
+
+```{r cars}
+map <- leaflet(height=500, width=780) %>%
+  # leaflet() %>% 
+  addTiles() %>%
+  leafem::addMouseCoordinates(proj4 = 26911) %>% ##can't seem to get it to render utms yet
+  addProviderTiles(providers$"Esri.DeLorme") %>% 
+  # addProviderTiles("Esri.WorldTopoMap", group = "Topo") %>%
+  addProviderTiles("Esri.WorldImagery", group = "ESRI Aerial") %>% 
+  # addPolylines(data=drake::readd(fish_habitat_model_lines),  opacity=1, color = '#6498d2',
+  #              fillOpacity = 0.75, weight=2) %>% 
+  # addPolylines(data=forest_tenure_road_lines,  opacity=1, color = '#ff7f00',
+  #              fillOpacity = 0.75, weight=2) %>%
+  # addPolylines(data=tracks,  opacity=0.75, color = '#e216c4',
+  #              fillOpacity = 0.75, weight=5) %>%
+  addLegend(
+    position = "topright",
+    colors = c("red", "yellow"),
+    labels = c("Barrier assessments", "Habiat Confirmations"), opacity = 1,
+    title = "Elk River Watershed Group Fish Passage Restoration Planning",
+  ) %>% 
+  # addAwesomeMarkers(lng = photo_metadata$lon_map,lat = photo_metadata$lat_map,
+  #                   popup = leafpop::popupImage(photo_metadata$url, src = "remote"),
+  #                   clusterOptions = markerClusterOptions(),
+  #                   labelOptions = offset(c(0,0)),
+  #                   label = paste0(photo_metadata$crossing_id, '_', photo_metadata$filename)) %>%
+    addCircleMarkers(
+    data=table_overview_sf,
+    label = table_overview_sf$site,
+    popup = leafpop::popupTable(x = select((table_overview_sf %>% st_set_geometry(NULL)), 
+                                           Site = site, Priority = priority, Stream = stream_name, Road = road_name, Comments = comments),
+                                feature.id = F,
+                                row.numbers = F), 
+    radius = 9,
+    fillColor = ~pal(priority),
+    color= "#ffffff",
+    stroke = TRUE, 
+    fillOpacity = 1.0,
+    weight = 2,
+    opacity = 1.0
+  ) %>% 
+  leafem::addHomeButton(ext = raster::extent(filter(table_overview_sf, priority %ilike% 'High')),
+                        position = "topleft",
+                        group = 'High Priority Crossings') %>%
+    leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125000')),  ##note that poorman detaches geom somehow .  dplyr leaves the geom as the whole object.. too weird
+                        position = "topleft",
+                        group = '125000') %>%
+      leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125179')),
+                        position = "topleft", 
+                        group = '125179') %>% 
+        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125180')),
+                        position = "topleft",
+                        group = '125180') %>%
+        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125186')),
+                        position = "topleft",
+                        group = '125186') %>%
+        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125231')),
+                        position = "topleft",
+                        group = '125231') %>%
+        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125247')),
+                        position = "topleft",
+                        group = '125247') %>%
+        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125253')),
+                        position = "topleft",
+                        group = '125253') %>%
+        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '57687')), ##watch out here
+                        position = "topleft",
+                        group = '125345') %>%
+        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% 'CV1')),
+                        position = "topleft",
+                        group = 'CV1') %>%
+  addScaleBar(position = 'bottomleft', options = scaleBarOptions(imperial = FALSE)) %>% 
+  addLayersControl(
+    baseGroups = c(
+      "Esri.DeLorme",
+      "ESRI Aerial"),
+    # overlayGroups = c(my_tracks$`125000_ds_track`),
+    options = layersControlOptions(collapsed = F)) %>% 
+  
+  addMiniMap(tiles = providers$"Esri.NatGeoWorldMap",
+             zoomLevelOffset = -6)    # setView(lng = -105.644, lat = 51.618, zoom = 3) ##this becomes the latest and greatest pscis crossing utm
+map
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
