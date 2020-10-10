@@ -9,3 +9,11 @@ git lfs track "*.PNG"
 
 ##add an attributes file
 git add .gitattributes
+
+##ignore a few files
+echo  "first.pdf" >> .gitignore
+
+
+##use this when we want to stage and commit
+git coa "some initial commits. Some updates with minor changes.  add shell script for git command - ex. large file tracking, ignore, etc."
+git push --all
