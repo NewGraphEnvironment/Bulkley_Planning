@@ -2,7 +2,11 @@
 .Rhistory
 .RData
 .Ruserdata
-data/
+data/background
+data/gis
+data/photos
+!*/outgoing
+data/.tmp.drivedownload/
 R/contract-subin-signature.R
 *.html
 *.docx

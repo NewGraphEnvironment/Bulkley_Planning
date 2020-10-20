@@ -5,14 +5,15 @@ date:
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=T}
 knitr::opts_chunk$set(echo = TRUE)
 source('R/packages.R')
 source("R/functions.R")
 ```
 
 
-```{r import-pscis}
+```{r import-pscis, eval=F}
+##these are necessary for the leaflet map
 ##import the phase 1 data for CWF and turn into spatial file
 pscis_phase1_sf <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>% 
   sf::st_as_sf(coords = c("easting", "northing"), 
@@ -20,91 +21,134 @@ pscis_phase1_sf <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>%
   
   
 ##import phase 2 data and turn into spatial file
-pscis_phase2_sf <-  import_pscis() %>%  
+pscis_phase2_sf <-  import_pscis(workbook_name = 'pscis_phase2.xlsm') %>%  
   sf::st_as_sf(coords = c("easting", "northing"), 
                crs = 26909, remove = F)
 ```
 
-```{r burn-kml}
-
-##this is how we make html tables.  Can add colors or whatever -https://stackoverflow.com/questions/50199845/converting-dataframe-in-required-html-table-format-in-r
-make_html_table <- function(df) {
-  df %>% 
-    mutate(html_tbl = knitr::kable(df) %>% 
-             # All cells get a border
-             row_spec(0:nrow(df), extra_css = "border: 1px solid black;") %>% 
-             row_spec(0, background = "yellow")) # header row in blue)
-}
+```{r burn-kmls}
 
 
-  
 ##bring in the data, make a html table of each row
-df <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>%  
-  group_split(my_crossing_reference) %>% 
-  map(make_html_table) %>% 
-  bind_rows() %>% 
-  mutate_at(vars(easting:northing), as.numeric) ##need to have coords be numeric
+df <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>% 
+  make_kml_col()  %>% 
+  dplyr::group_split(site_id) %>%
+  purrr::map(make_html_tbl) %>%
+  dplyr::bind_rows()
 
-# df_list <- df %>% 
-#   map(make_html_table) %>% 
-#   bind_rows()
+coords <- df %>% select(easting, northing)
+proj4string <- sp::CRS("+init=epsg:32609")
+df <- df %>% 
+  sp::SpatialPointsDataFrame(coords = coords, proj4string = proj4string) %>% 
+  plotKML::reproject()
 
-##convert to spatialpointsdataframe
-sp::coordinates(df) <- ~ easting + northing
-sp::proj4string(df) <- sp::CRS("+init=epsg:32611")
-df_kml <- reproject(df) 
-
+##create the outgoing directory if it is not already there
+targetdir = paste0(getwd(), "/data/gis/outgoing")
+dir.create(targetdir)
 
 ##burn to kml
-
 ##specify shape
 # shape = "http://maps.google.com/mapfiles/kml/pal2/icon18.png"
-shape = "http://maps.google.com/mapfiles/kml/paddle/A.png"
+# shape = "http://maps.google.com/mapfiles/kml/paddle/A.png"
+shape = "http://maps.google.com/mapfiles/kml/pal5/icon56.png"
 
-kml_open("gis/outgoing/pscis_phase1.kml")
-kml_layer(df_kml, shape = shape, colour = barrier_result, labels = my_crossing_reference, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("gis/outgoing/pscis_phase1.kml")
+kml_open("data/gis/outgoing/pscis_phase1.kml")
+kml_layer(df, shape = shape, colour = color, labels = label, html.table = df$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
+kml_close("data/gis/outgoing/pscis_phase1.kml")
 
 
 ##now burn the phase 2 sites
-##bring in the data, make a html table of each row
-df <- import_pscis(workbook_name = 'pscis_phase2.xlsm') %>%  
-  group_split(my_crossing_reference) %>% 
-  map(make_html_table) %>% 
-  bind_rows() %>% 
-  mutate_at(vars(easting:northing), as.numeric) ##need to have coords be numeric
-
-# df_list <- df %>% 
-#   map(make_html_table) %>% 
-#   bind_rows()
-
-##convert to spatialpointsdataframe
-sp::coordinates(df) <- ~ easting + northing
-sp::proj4string(df) <- sp::CRS("+init=epsg:32611")
-df_kml <- reproject(df) 
+##bring in the data, make a html table of each row↑
+df <- import_pscis(workbook_name = 'pscis_phase2.xlsm') %>% 
+  make_kml_col() %>% 
+  group_split(site_id) %>% 
+  map(make_html_tbl) %>% 
+  bind_rows() 
 
 
+coords <- df %>% select(easting, northing)
+proj4string <- sp::CRS("+init=epsg:32609")
+df_kml <- df %>% 
+  sp::SpatialPointsDataFrame(coords = coords, proj4string = proj4string) %>% 
+  plotKML::reproject()
+ 
 ##burn to kml
-
 ##specify shape
 shape = "http://maps.google.com/mapfiles/kml/paddle/C.png"
+# shape2 = "http://maps.google.com/mapfiles/kml/pal5/icon50.png"
 
-kml_open("gis/outgoing/pscis_phase2.kml")
-kml_layer(df_kml, shape = shape, colour = barrier_result, labels = my_crossing_reference, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("gis/outgoing/pscis_phase2.kml")
+kml_open("data/gis/outgoing/pscis_phase2.kml")
+kml_layer(df_kml, shape = shape, colour = color, labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
+kml_close("data/gis/outgoing/pscis_phase2.kml")
 
-##now we will zip up the kml files in the data folder and rename with kmz
-files_to_zip <- paste0("gis/outgoing/", list.files(path = "gis/outgoing/", pattern = "\\.kml$"))  ##this used to includes the planning file which we don't want to do so watch out
-zip::zipr("gis/outgoing/elk_progress_kml.zip", files = files_to_zip)  ##it does not work to zip to kmz!!
 
 ```
 
-
-## Overview Map
-
+```{r summarise-habitat}
 
 
-```{r cars}
+
+
+habitat_data <- import_fish_data() %>% 
+  pluck('step_4_stream_site_data')
+
+habitat_data_summary <- habitat_data %>% 
+  select(gazetted_names, local_name, avg_channel_width_m, 
+         avg_wetted_width_m, average_residual_pool_depth_m,
+         average_gradient_percent, temperature_c, conductivity_m_s_cm,
+         p_h, total_cover:crown_closure, bed_material_dominant, bed_material_subdominant,
+         morphology, feature_type, comments) %>% 
+  mutate(average_gradient_percent = average_gradient_percent * 100) %>% 
+  mutate(across(where(is.numeric), round, 1)) %>% 
+  tidyr::separate(local_name, into = c('site_id', 'location'), remove = F)
+
+##lets make tables for each site that has habitat data for that site
+##bring in the data, make a html table of each row
+hab_html_tbl <- habitat_data_summary %>% 
+  dplyr::group_split(site_id) %>%
+  purrr::map(make_html_tbl_hab) %>%
+  dplyr::bind_rows() %>% 
+  select(site_id, html_tbl) %>% 
+  dplyr::distinct() %>% 
+  mutate(site_id = as.integer(site_id))
+
+
+##lets see that we have everything
+result <- as_tibble(hab_html_tbl$site_id %in% df$site_id)
+chk <- bind_cols(as_tibble(test), result)
+
+##join some pscis info with our hab table and make another kml
+df_hab <- left_join(
+  select(df, site_id, label, easting, northing),
+  hab_html_tbl,
+  by = 'site_id'
+)
+
+coords <- df_hab %>% select(easting, northing)
+proj4string <- sp::CRS("+init=epsg:32609")
+df_kml <- df_hab %>% 
+  sp::SpatialPointsDataFrame(coords = coords, proj4string = proj4string) %>% 
+  plotKML::reproject()
+ 
+##burn to kml
+##specify shape
+shape = "http://maps.google.com/mapfiles/kml/shapes/fishing.png"
+# shape2 = "http://maps.google.com/mapfiles/kml/pal5/icon50.png"
+
+kml_open("data/gis/outgoing/habitat_data.kml")
+kml_layer(df_kml, shape = shape, colour = 'yellow', labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
+kml_close("data/gis/outgoing/habitat_data.kml")
+
+```
+
+```{r zip-kml}
+##now we will zip up the kml files in the data folder and rename with kmz
+files_to_zip <- paste0("data/gis/outgoing/", list.files(path = "data/gis/outgoing/", pattern = "\\.kml$"))  ##this used to includes the planning file which we don't want to do so watch out
+zip::zipr("data/gis/outgoing/bulkley_progress_kml.zip", files = files_to_zip)  ##it does not work to zip to kmz!!
+```
+
+
+```{r leaflet-map, eval=F}
 map <- leaflet(height=500, width=780) %>%
   # leaflet() %>% 
   addTiles() %>%
@@ -188,12 +232,3 @@ map
 
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

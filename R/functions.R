@@ -28,14 +28,64 @@ at_trim_xlsheet2 <- function(df, column_last = ncol(df)) {
     janitor::remove_empty(., which = "rows")
 }
 ##function to import pscis info
-import_pscis <- function(workbook_name = 'PSCIS_Assessment_Form_OCBAB0614_FP.xls'){ ##new template.  could change file back to .xls
+import_pscis <- function(workbook_name = 'pscis_phase1.xlsm'){ ##new template.  could change file back to .xls
   readxl::read_excel(path = paste0(getwd(),"/data/", workbook_name), 
                      sheet = 'PSCIS Assessment Worksheet') %>% 
     # purrr::set_names(janitor::make_clean_names(names(.))) %>% 
     at_trim_xlsheet2() %>% ##recently added function above and pulled the altools package as it was a week link
     rename(date = date_of_assessment_yyyy_mm_dd) %>% 
     mutate(date = janitor::excel_numeric_to_date(as.numeric(date))) %>% 
-    filter(!is.na(date))
+    filter(!is.na(date)) %>% 
+    readr::type_convert()  ##guess the type!!
+}
+
+
+import_fish_data <- function(workbook_name = 'habitat_assessments.xls'){
+  readxl::excel_sheets(path = paste0(getwd(),"/data/", workbook_name)) %>% 
+  purrr::set_names() %>% 
+  purrr::map(readxl::read_excel, 
+             path = paste0(getwd(),"/data/", workbook_name), 
+             .name_repair = janitor::make_clean_names) %>% 
+  purrr::set_names(janitor::make_clean_names(names(.))) %>% 
+  purrr::map(at_trim_xlsheet2) %>% #moved to functions from https://github.com/NewGraphEnvironment/altools to reduce dependencies
+  purrr::map(readr::type_convert)
+}
+
+##the colors don't seem to work yet.  Might need to put a case_when for the actual google icon symbol.  Posting cutom symbols on a url and pointing to them will work too.
+make_kml_col <- function(df){
+  df %>% 
+    mutate(pscis_crossing_id = as.integer(pscis_crossing_id),
+           my_crossing_reference = as.integer(my_crossing_reference),
+           color = case_when(barrier_result == 'Barrier' ~ 'red',
+                             barrier_result == 'Passable' ~ 'green',
+                             barrier_result == 'Potential' ~ 'orange',
+                             T ~ 'white'),
+           color = plotKML::col2kml(color),
+           site_id = case_when(!is.na(pscis_crossing_id) ~ pscis_crossing_id,
+                               is.na(pscis_crossing_id) ~ my_crossing_reference),
+           label = paste(site_id, stream_name, barrier_result, habitat_value, sep = '-')) 
+  # mutate(across(where(is.numeric), round(.,2)))
+  
+}
+
+##this is how we make html tables.  Can add colors or whatever -https://stackoverflow.com/questions/50199845/converting-dataframe-in-required-html-table-format-in-r
+make_html_tbl <- function(df) {
+  df %>% 
+    mutate(html_tbl = knitr::kable(df) %>% 
+             # All cells get a border
+             row_spec(0:nrow(df), extra_css = "border: 1px solid black;") %>% 
+             row_spec(0, background = "yellow")) # header row in blue)
+}
+
+
+## add a line to the function to make the comments column wide enough
+make_html_tbl_hab <- function(df) {
+  df %>% 
+    mutate(html_tbl = knitr::kable(df) %>% 
+             kableExtra::row_spec(0:nrow(df), extra_css = "border: 1px solid black;") %>% # All cells get a border
+             kableExtra::row_spec(0, background = "yellow") %>% 
+             kableExtra::column_spec(column = 25, width_min = '4in')
+    )
 }
 
 ##here is how we get the watershed codes - thanks Simon!!!!
