@@ -5,10 +5,12 @@
 data/background
 data/gis
 data/photos
-!*/outgoing
+data/gis
 data/.tmp.drivedownload/
 R/contract-subin-signature.R
 *.html
 *.docx
 first.pdf
+*data/~$
+!outgoing
 

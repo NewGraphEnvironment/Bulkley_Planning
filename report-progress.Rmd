@@ -43,7 +43,7 @@ df <- df %>%
   plotKML::reproject()
 
 ##create the outgoing directory if it is not already there
-targetdir = paste0(getwd(), "/data/gis/outgoing")
+targetdir = paste0(getwd(), "/data/outgoing")
 dir.create(targetdir)
 
 ##burn to kml
@@ -52,9 +52,9 @@ dir.create(targetdir)
 # shape = "http://maps.google.com/mapfiles/kml/paddle/A.png"
 shape = "http://maps.google.com/mapfiles/kml/pal5/icon56.png"
 
-kml_open("data/gis/outgoing/pscis_phase1.kml")
+kml_open("data/outgoing/pscis_phase1.kml")
 kml_layer(df, shape = shape, colour = color, labels = label, html.table = df$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("data/gis/outgoing/pscis_phase1.kml")
+kml_close("data/outgoing/pscis_phase1.kml")
 
 
 ##now burn the phase 2 sites
@@ -77,9 +77,9 @@ df_kml <- df %>%
 shape = "http://maps.google.com/mapfiles/kml/paddle/C.png"
 # shape2 = "http://maps.google.com/mapfiles/kml/pal5/icon50.png"
 
-kml_open("data/gis/outgoing/pscis_phase2.kml")
+kml_open("data/outgoing/pscis_phase2.kml")
 kml_layer(df_kml, shape = shape, colour = color, labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("data/gis/outgoing/pscis_phase2.kml")
+kml_close("data/outgoing/pscis_phase2.kml")
 
 
 ```
@@ -135,16 +135,16 @@ df_kml <- df_hab %>%
 shape = "http://maps.google.com/mapfiles/kml/shapes/fishing.png"
 # shape2 = "http://maps.google.com/mapfiles/kml/pal5/icon50.png"
 
-kml_open("data/gis/outgoing/habitat_data.kml")
+kml_open("data/outgoing/habitat_data.kml")
 kml_layer(df_kml, shape = shape, colour = 'yellow', labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("data/gis/outgoing/habitat_data.kml")
+kml_close("data/outgoing/habitat_data.kml")
 
 ```
 
 ```{r zip-kml}
 ##now we will zip up the kml files in the data folder and rename with kmz
-files_to_zip <- paste0("data/gis/outgoing/", list.files(path = "data/gis/outgoing/", pattern = "\\.kml$"))  ##this used to includes the planning file which we don't want to do so watch out
-zip::zipr("data/gis/outgoing/bulkley_progress_kml.zip", files = files_to_zip)  ##it does not work to zip to kmz!!
+files_to_zip <- paste0("data/outgoing/", list.files(path = "data/gis/outgoing/", pattern = "\\.kml$"))  ##this used to includes the planning file which we don't want to do so watch out
+zip::zipr("data/outgoing/bulkley_progress_kml.zip", files = files_to_zip)  ##it does not work to zip to kmz!!
 ```
 
 
