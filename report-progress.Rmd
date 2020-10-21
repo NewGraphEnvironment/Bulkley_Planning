@@ -27,14 +27,46 @@ pscis_phase2_sf <-  import_pscis(workbook_name = 'pscis_phase2.xlsm') %>%
 ```
 
 ```{r burn-kmls}
+##get the names of your pscis files
+workbooks <-  list.files(path = 'data', pattern = "pscis", all.files = F) %>% 
+  grep(pattern = '~', invert = T, value = T)
 
-
-##bring in the data, make a html table of each row
-df <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>% 
+##make a function to import and add the source
+make_pscis_kml <- function(workbook){
+  import_pscis(workbook_name = workbook) %>% 
   make_kml_col()  %>% 
   dplyr::group_split(site_id) %>%
   purrr::map(make_html_tbl) %>%
-  dplyr::bind_rows()
+  dplyr::bind_rows() %>% 
+  dplyr::mutate(source = tools::file_path_sans_ext(workbook))
+}
+
+##import and combine all your pscis assessments
+df <- workbooks %>% 
+  map_df(make_pscis_kml) %>% 
+  dplyr::mutate(sort = case_when(source %like% 'phase1' ~ 2,
+                                 source %like% 'phase2' ~ 1,
+                                 T ~ 3),
+                shape = case_when(source %like% 'phase1' ~ "http://maps.google.com/mapfiles/kml/paddle/A.png",
+                                  source %like% 'phase2' ~ "http://maps.google.com/mapfiles/kml/paddle/C.png",
+                                  T ~ "http://maps.google.com/mapfiles/kml/paddle/R.png")) %>%
+  dplyr::arrange(sort) %>% 
+  dplyr::distinct(site_id, .keep_all = T)
+
+
+# df <- import_pscis(workbook_name = workbook_name) %>% 
+#   make_kml_col()  %>% 
+#   dplyr::group_split(site_id) %>%
+#   purrr::map(make_html_tbl) %>%
+#   dplyr::bind_rows() %>% 
+#   dplyr::mutate(source = tools::file_path_sans_ext(workbook_name))
+# 
+# ##bring in the data, make a html table of each row
+# df <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>% 
+#   make_kml_col()  %>% 
+#   dplyr::group_split(site_id) %>%
+#   purrr::map(make_html_tbl) %>%
+#   dplyr::bind_rows()
 
 coords <- df %>% select(easting, northing)
 proj4string <- sp::CRS("+init=epsg:32609")
@@ -49,43 +81,55 @@ dir.create(targetdir)
 ##burn to kml
 ##specify shape
 # shape = "http://maps.google.com/mapfiles/kml/pal2/icon18.png"
-# shape = "http://maps.google.com/mapfiles/kml/paddle/A.png"
-shape = "http://maps.google.com/mapfiles/kml/pal5/icon56.png"
+shape = "http://maps.google.com/mapfiles/kml/paddle/A.png"
+# shape = "http://maps.google.com/mapfiles/kml/pal5/icon56.png"
 
-kml_open("data/outgoing/pscis_phase1.kml")
-kml_layer(df, shape = shape, colour = color, labels = label, html.table = df$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("data/outgoing/pscis_phase1.kml")
-
-
-##now burn the phase 2 sites
-##bring in the data, make a html table of each row↑
-df <- import_pscis(workbook_name = 'pscis_phase2.xlsm') %>% 
-  make_kml_col() %>% 
-  group_split(site_id) %>% 
-  map(make_html_tbl) %>% 
-  bind_rows() 
+kml_open("data/outgoing/barrier_assessments.kml")
+kml_layer(df, shape = df$shape, colour = df$color, labels = df$label, html.table = df$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
+kml_close("data/outgoing/barrier_assessments.kml")
 
 
-coords <- df %>% select(easting, northing)
-proj4string <- sp::CRS("+init=epsg:32609")
-df_kml <- df %>% 
-  sp::SpatialPointsDataFrame(coords = coords, proj4string = proj4string) %>% 
-  plotKML::reproject()
- 
-##burn to kml
-##specify shape
-shape = "http://maps.google.com/mapfiles/kml/paddle/C.png"
-# shape2 = "http://maps.google.com/mapfiles/kml/pal5/icon50.png"
+# 
+# kml_open("data/outgoing/pscis_phase1.kml")
+# kml_layer(df, shape = shape, colour = color, labels = label, html.table = df$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
+# kml_close("data/outgoing/pscis_phase1.kml")
 
-kml_open("data/outgoing/pscis_phase2.kml")
-kml_layer(df_kml, shape = shape, colour = color, labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("data/outgoing/pscis_phase2.kml")
+
+# ##now burn the phase 2 sites
+# ##bring in the data, make a html table of each row↑
+# df <- import_pscis(workbook_name = 'pscis_phase2.xlsm') %>% 
+#   make_kml_col() %>% 
+#   group_split(site_id) %>% 
+#   map(make_html_tbl) %>% 
+#   bind_rows() 
+
+
+# coords <- df %>% select(easting, northing)
+# proj4string <- sp::CRS("+init=epsg:32609")
+# df_kml <- df %>% 
+#   sp::SpatialPointsDataFrame(coords = coords, proj4string = proj4string) %>% 
+#   plotKML::reproject()
+#  
+# ##burn to kml
+# ##specify shape
+# shape = "http://maps.google.com/mapfiles/kml/paddle/C.png"
+# # shape2 = "http://maps.google.com/mapfiles/kml/pal5/icon50.png"
+# 
+# kml_open("data/outgoing/pscis_phase2.kml")
+# kml_layer(df_kml, shape = shape, colour = color, labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
+# kml_close("data/outgoing/pscis_phase2.kml")
 
 
 ```
 
 ```{r summarise-habitat}
-
+##now get the phase 2 sites only to add the habitat info
+##bring in the data, make a html table of each row↑
+df <- import_pscis(workbook_name = 'pscis_phase2.xlsm') %>% 
+  make_kml_col() %>% 
+  group_split(site_id) %>% 
+  map(make_html_tbl) %>% 
+  bind_rows()
 
 
 
@@ -94,13 +138,13 @@ habitat_data <- import_fish_data() %>%
 
 habitat_data_summary <- habitat_data %>% 
   select(gazetted_names, local_name, avg_channel_width_m, 
-         avg_wetted_width_m, average_residual_pool_depth_m,
-         average_gradient_percent, temperature_c, conductivity_m_s_cm,
-         p_h, total_cover:crown_closure, bed_material_dominant, bed_material_subdominant,
-         morphology, feature_type, comments) %>% 
+         avg_wetted_width_m,
+         average_gradient_percent, comments) %>% 
   mutate(average_gradient_percent = average_gradient_percent * 100) %>% 
   mutate(across(where(is.numeric), round, 1)) %>% 
-  tidyr::separate(local_name, into = c('site_id', 'location'), remove = F)
+  tidyr::separate(local_name, into = c('site_id', 'location'), remove = F) %>% 
+  dplyr::select(-local_name)
+
 
 ##lets make tables for each site that has habitat data for that site
 ##bring in the data, make a html table of each row
@@ -114,15 +158,15 @@ hab_html_tbl <- habitat_data_summary %>%
 
 
 ##lets see that we have everything
-result <- as_tibble(hab_html_tbl$site_id %in% df$site_id)
-chk <- bind_cols(as_tibble(test), result)
+# result <- as_tibble(hab_html_tbl$site_id %in% df$site_id)
+# chk <- bind_cols(as_tibble(test), result)
 
 ##join some pscis info with our hab table and make another kml
 df_hab <- left_join(
   select(df, site_id, label, easting, northing),
   hab_html_tbl,
   by = 'site_id'
-)
+) 
 
 coords <- df_hab %>% select(easting, northing)
 proj4string <- sp::CRS("+init=epsg:32609")
@@ -135,15 +179,15 @@ df_kml <- df_hab %>%
 shape = "http://maps.google.com/mapfiles/kml/shapes/fishing.png"
 # shape2 = "http://maps.google.com/mapfiles/kml/pal5/icon50.png"
 
-kml_open("data/outgoing/habitat_data.kml")
+kml_open("data/outgoing/habitat_assessments.kml")
 kml_layer(df_kml, shape = shape, colour = 'yellow', labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("data/outgoing/habitat_data.kml")
+kml_close("data/outgoing/habitat_assessments.kml")
 
 ```
 
 ```{r zip-kml}
 ##now we will zip up the kml files in the data folder and rename with kmz
-files_to_zip <- paste0("data/outgoing/", list.files(path = "data/gis/outgoing/", pattern = "\\.kml$"))  ##this used to includes the planning file which we don't want to do so watch out
+files_to_zip <- paste0("data/outgoing/", list.files(path = "data/outgoing/", pattern = "\\.kml$"))  ##this used to includes the planning file which we don't want to do so watch out
 zip::zipr("data/outgoing/bulkley_progress_kml.zip", files = files_to_zip)  ##it does not work to zip to kmz!!
 ```
 

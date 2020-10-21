@@ -58,7 +58,7 @@ make_kml_col <- function(df){
            my_crossing_reference = as.integer(my_crossing_reference),
            color = case_when(barrier_result == 'Barrier' ~ 'red',
                              barrier_result == 'Passable' ~ 'green',
-                             barrier_result == 'Potential' ~ 'orange',
+                             barrier_result == 'Potential' ~ 'purple',
                              T ~ 'white'),
            color = plotKML::col2kml(color),
            site_id = case_when(!is.na(pscis_crossing_id) ~ pscis_crossing_id,
@@ -84,7 +84,7 @@ make_html_tbl_hab <- function(df) {
     mutate(html_tbl = knitr::kable(df) %>% 
              kableExtra::row_spec(0:nrow(df), extra_css = "border: 1px solid black;") %>% # All cells get a border
              kableExtra::row_spec(0, background = "yellow") %>% 
-             kableExtra::column_spec(column = 25, width_min = '4in')
+             kableExtra::column_spec(column = 7, width_min = '4in')
     )
 }
 
