@@ -63,30 +63,68 @@ make_kml_col <- function(df){
            color = plotKML::col2kml(color),
            site_id = case_when(!is.na(pscis_crossing_id) ~ pscis_crossing_id,
                                is.na(pscis_crossing_id) ~ my_crossing_reference),
-           label = paste(site_id, stream_name, barrier_result, habitat_value, sep = '-')) 
+           label = paste0(site_id, '-', stream_name, '-', barrier_result, 
+                          '-', habitat_value, ' habitat value')) 
   # mutate(across(where(is.numeric), round(.,2)))
   
 }
 
 ##this is how we make html tables.  Can add colors or whatever -https://stackoverflow.com/questions/50199845/converting-dataframe-in-required-html-table-format-in-r
-make_html_tbl <- function(df) {
-  df %>% 
-    mutate(html_tbl = knitr::kable(df) %>% 
+make_html_tbl <- function(df, priorities) {
+  
+  df2 <- df %>% 
+    dplyr::select(road_name, crossing_subtype, cv_diam_m = diameter_or_span_meters,
+                  cv_lngth_m = length_or_width_meters, outlet_drop_meters, cv_slope = culvert_slope_percent, 
+                  chan_width = downstream_channel_width_meters,
+                  habitat_value, cv_lgth_score = culvert_length_score, embed_score, outlet_drop_score,
+                  culvert_slope_score, swr_score = stream_width_ratio_score, final_score,
+                  barrier_result,assessment_comment)
+  df <- df %>% 
+    mutate(html_tbl = knitr::kable(df2) %>% 
              # All cells get a border
-             row_spec(0:nrow(df), extra_css = "border: 1px solid black;") %>% 
-             row_spec(0, background = "yellow")) # header row in blue)
+             row_spec(0:nrow(df2), extra_css = "border: 1px solid black;") %>% 
+             row_spec(0, background = "yellow") %>% 
+             kableExtra::column_spec(column = 16, width_min = '2in') %>% 
+             kableExtra::column_spec(column = 1:15, width_min = '0.3in')
+    )
+  return(df)
 }
 
+##this is how we make html tables.  Can add colors or whatever -https://stackoverflow.com/questions/50199845/converting-dataframe-in-required-html-table-format-in-r
+make_html_tbl <- function(df) {
+  
+  df2 <- df %>% 
+    dplyr::select(road_name, crossing_subtype, cv_diam_m = diameter_or_span_meters,
+                  cv_lngth_m = length_or_width_meters, out_drop_m = outlet_drop_meters, cv_slope = culvert_slope_percent, 
+                  chan_wdth = downstream_channel_width_meters,
+                  habitat_value, cv_lgth_score = culvert_length_score, embed_score, out_dro_score = outlet_drop_score,
+                  culvert_slope_score, swr_score = stream_width_ratio_score, final_score,
+                  barrier_result, assessment_comment)
+  df <- df %>% 
+    mutate(html_tbl = knitr::kable(df2) %>% 
+             # All cells get a border
+             row_spec(0:nrow(df2), extra_css = "border: 1px solid black;") %>% 
+             row_spec(0, background = "yellow") %>% 
+             kableExtra::column_spec(column = 16, width_min = '2in') %>% 
+             kableExtra::column_spec(column = 1:15, width_min = '0.3in')
+    )
+  return(df)
+}
 
 ## add a line to the function to make the comments column wide enough
 make_html_tbl_hab <- function(df) {
+  df2 <- df %>% janitor::remove_empty() 
   df %>% 
-    mutate(html_tbl = knitr::kable(df) %>% 
-             kableExtra::row_spec(0:nrow(df), extra_css = "border: 1px solid black;") %>% # All cells get a border
+    mutate(html_tbl = knitr::kable(df2) %>% 
+             kableExtra::row_spec(0:nrow(df2), extra_css = "border: 1px solid black;") %>% # All cells get a border
              kableExtra::row_spec(0, background = "yellow") %>% 
-             kableExtra::column_spec(column = 7, width_min = '4in')
+             kableExtra::column_spec(column = ncol(df2) - 1, width_min = '0.5in') %>%
+             kableExtra::column_spec(column = ncol(df2), width_min = '4in')
     )
 }
+
+#can't get the link text to work.... 
+##mutate(photo = cell_spec('copy_url', "html", link = photo_link)) %>%
 
 ##here is how we get the watershed codes - thanks Simon!!!!
 wsheds <- dbGetQuery(conn, "SELECT DISTINCT ON (pscis_model_combined_id)

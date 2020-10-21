@@ -4,13 +4,12 @@
 .Ruserdata
 data/background
 data/gis
-data/photos
 data/gis
 data/.tmp.drivedownload/
 R/contract-subin-signature.R
 *.html
 *.docx
 first.pdf
-*data/~$
+data/~$*
 !outgoing
 

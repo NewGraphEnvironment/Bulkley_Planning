@@ -33,12 +33,12 @@ workbooks <-  list.files(path = 'data', pattern = "pscis", all.files = F) %>%
 
 ##make a function to import and add the source
 make_pscis_kml <- function(workbook){
-  import_pscis(workbook_name = workbook) %>% 
-  make_kml_col()  %>% 
-  dplyr::group_split(site_id) %>%
-  purrr::map(make_html_tbl) %>%
-  dplyr::bind_rows() %>% 
-  dplyr::mutate(source = tools::file_path_sans_ext(workbook))
+  import_pscis(workbook_name = workbook)  %>% 
+    make_kml_col()  %>% 
+    dplyr::group_split(site_id) %>%
+    purrr::map(make_html_tbl) %>%
+    dplyr::bind_rows() %>% 
+    dplyr::mutate(source = tools::file_path_sans_ext(workbook))
 }
 
 ##import and combine all your pscis assessments
@@ -61,12 +61,7 @@ df <- workbooks %>%
 #   dplyr::bind_rows() %>% 
 #   dplyr::mutate(source = tools::file_path_sans_ext(workbook_name))
 # 
-# ##bring in the data, make a html table of each row
-# df <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>% 
-#   make_kml_col()  %>% 
-#   dplyr::group_split(site_id) %>%
-#   purrr::map(make_html_tbl) %>%
-#   dplyr::bind_rows()
+
 
 coords <- df %>% select(easting, northing)
 proj4string <- sp::CRS("+init=epsg:32609")
@@ -87,38 +82,6 @@ shape = "http://maps.google.com/mapfiles/kml/paddle/A.png"
 kml_open("data/outgoing/barrier_assessments.kml")
 kml_layer(df, shape = df$shape, colour = df$color, labels = df$label, html.table = df$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
 kml_close("data/outgoing/barrier_assessments.kml")
-
-
-# 
-# kml_open("data/outgoing/pscis_phase1.kml")
-# kml_layer(df, shape = shape, colour = color, labels = label, html.table = df$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-# kml_close("data/outgoing/pscis_phase1.kml")
-
-
-# ##now burn the phase 2 sites
-# ##bring in the data, make a html table of each row↑
-# df <- import_pscis(workbook_name = 'pscis_phase2.xlsm') %>% 
-#   make_kml_col() %>% 
-#   group_split(site_id) %>% 
-#   map(make_html_tbl) %>% 
-#   bind_rows() 
-
-
-# coords <- df %>% select(easting, northing)
-# proj4string <- sp::CRS("+init=epsg:32609")
-# df_kml <- df %>% 
-#   sp::SpatialPointsDataFrame(coords = coords, proj4string = proj4string) %>% 
-#   plotKML::reproject()
-#  
-# ##burn to kml
-# ##specify shape
-# shape = "http://maps.google.com/mapfiles/kml/paddle/C.png"
-# # shape2 = "http://maps.google.com/mapfiles/kml/pal5/icon50.png"
-# 
-# kml_open("data/outgoing/pscis_phase2.kml")
-# kml_layer(df_kml, shape = shape, colour = color, labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-# kml_close("data/outgoing/pscis_phase2.kml")
-
 
 ```
 
@@ -143,13 +106,30 @@ habitat_data_summary <- habitat_data %>%
   mutate(average_gradient_percent = average_gradient_percent * 100) %>% 
   mutate(across(where(is.numeric), round, 1)) %>% 
   tidyr::separate(local_name, into = c('site_id', 'location'), remove = F) %>% 
+  dplyr::mutate(site_id = as.numeric(site_id)) %>% 
   dplyr::select(-local_name)
+
+##add the info from the priorities
+priorities_spreadsheet <-  readxl::read_excel(path = "./data/priorities.xlsx") %>% 
+  tidyr::separate(local_name, into = c('site_id', 'location'), remove = F) %>% 
+  readr::type_convert()
+
+habitat_data_summary <- left_join(
+  habitat_data_summary,
+  select(priorities_spreadsheet, site_id, location, survey_length_m, electrofishing, minnowtrapping, uav_survey),
+  by = c('site_id', 'location')
+)  %>% 
+  dplyr::mutate(photo_link = paste0(
+    'https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/', site_id, '/culvert_all.JPG')) %>% 
+  select(gazetted_names:average_gradient_percent, survey_length_m:uav_survey, photo_link, everything())
+
+
 
 
 ##lets make tables for each site that has habitat data for that site
 ##bring in the data, make a html table of each row
 hab_html_tbl <- habitat_data_summary %>% 
-  dplyr::group_split(site_id) %>%
+  dplyr::group_split(site_id) %>% 
   purrr::map(make_html_tbl_hab) %>%
   dplyr::bind_rows() %>% 
   select(site_id, html_tbl) %>% 
@@ -167,6 +147,9 @@ df_hab <- left_join(
   hab_html_tbl,
   by = 'site_id'
 ) 
+
+
+
 
 coords <- df_hab %>% select(easting, northing)
 proj4string <- sp::CRS("+init=epsg:32609")
