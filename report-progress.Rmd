@@ -26,6 +26,14 @@ pscis_phase2_sf <-  import_pscis(workbook_name = 'pscis_phase2.xlsm') %>%
                crs = 26909, remove = F)
 ```
 
+```{r clear-kmls}
+##we need to clear out the old kmls
+##now we will zip up the kml files in the data folder and rename with kmz
+files_to_clear <- paste0("data/outgoing/", list.files(path = "data/outgoing/", pattern = "\\.kml$")) 
+file.remove(files_to_clear)
+
+```
+
 ```{r burn-kmls}
 ##get the names of your pscis files
 workbooks <-  list.files(path = 'data', pattern = "pscis", all.files = F) %>% 
@@ -52,6 +60,7 @@ df <- workbooks %>%
                                   T ~ "http://maps.google.com/mapfiles/kml/paddle/R.png")) %>%
   dplyr::arrange(sort) %>% 
   dplyr::distinct(site_id, .keep_all = T)
+  # dplyr::select(road_name:barrier_result, photo_link, assessment_comment)
 
 
 # df <- import_pscis(workbook_name = workbook_name) %>% 
@@ -79,9 +88,15 @@ dir.create(targetdir)
 shape = "http://maps.google.com/mapfiles/kml/paddle/A.png"
 # shape = "http://maps.google.com/mapfiles/kml/pal5/icon56.png"
 
-kml_open("data/outgoing/barrier_assessments.kml")
+
+##get teh name of the folder we are in
+bname <- basename(dirname(dirname(getwd())))
+
+
+# kml_open("data/outgoing/barrier_assessments.kml")
+kml_open(paste0("data/outgoing/",bname, "_barrier_assessments.kml"))
 kml_layer(df, shape = df$shape, colour = df$color, labels = df$label, html.table = df$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("data/outgoing/barrier_assessments.kml")
+kml_close(paste0("data/outgoing/",bname, "_barrier_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
 
 ```
 
@@ -120,7 +135,8 @@ habitat_data_summary <- left_join(
   by = c('site_id', 'location')
 )  %>% 
   dplyr::mutate(photo_link = paste0(
-    'https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/', site_id, '/culvert_all.JPG')) %>% 
+    'https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/', site_id, '/crossing_all.JPG')) %>% 
+  mutate(photo_link = cell_spec('crossing', "html", link = photo_link)) %>% 
   select(gazetted_names:average_gradient_percent, survey_length_m:uav_survey, photo_link, everything())
 
 
@@ -149,8 +165,6 @@ df_hab <- left_join(
 ) 
 
 
-
-
 coords <- df_hab %>% select(easting, northing)
 proj4string <- sp::CRS("+init=epsg:32609")
 df_kml <- df_hab %>% 
@@ -162,9 +176,11 @@ df_kml <- df_hab %>%
 shape = "http://maps.google.com/mapfiles/kml/shapes/fishing.png"
 # shape2 = "http://maps.google.com/mapfiles/kml/pal5/icon50.png"
 
-kml_open("data/outgoing/habitat_assessments.kml")
+
+# filename <- paste0(name,format(Sys.time(),"_%Y%m%d_%H%M.kml"))
+kml_open(paste0("data/outgoing/",bname, "_habitat_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
 kml_layer(df_kml, shape = shape, colour = 'yellow', labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close("data/outgoing/habitat_assessments.kml")
+kml_close(paste0("data/outgoing/",bname, "_habitat_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
 
 ```
 
@@ -172,6 +188,8 @@ kml_close("data/outgoing/habitat_assessments.kml")
 ##now we will zip up the kml files in the data folder and rename with kmz
 files_to_zip <- paste0("data/outgoing/", list.files(path = "data/outgoing/", pattern = "\\.kml$"))  ##this used to includes the planning file which we don't want to do so watch out
 zip::zipr("data/outgoing/bulkley_progress_kml.zip", files = files_to_zip)  ##it does not work to zip to kmz!!
+
+
 ```
 
 

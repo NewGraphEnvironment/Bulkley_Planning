@@ -1,6 +1,6 @@
 <kml xmlns:xsd="http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd" xmlns:xmlns="http://www.opengis.net/kml/2.2/" version="1.0">
   <Document>
-    <name>data/outgoing/barrier_assessments.kml</name>
+    <name>data/outgoing/2019-023_Bulkley_fish_passage_barrier_assessments.kml</name>
     <open>1</open>
     <Folder>
       <name>SpatialPointsDataFrame</name>
@@ -775,26 +775,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barren Creek FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 23 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 21 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barren Creek FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 23 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 21 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3042/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Beaver influenced stream with lake upstream. </td>
   </tr>
 </tbody>
@@ -826,26 +828,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> North road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 40 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.76 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3.5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 34 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> North road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 40 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.76 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3.5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 34 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3054/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Fill depth approximatley 12m.  Fish observed upstream of crossing. </td>
   </tr>
 </tbody>
@@ -877,26 +881,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> North Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 27 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.02 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3.9 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 34 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> North Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 27 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.02 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3.9 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 34 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3139/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Inlet plugged with small and large woody debris. Fry and juvenile fish observed upstream. </td>
   </tr>
 </tbody>
@@ -928,26 +934,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Woodmere Nursery Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 14 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.36 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 36 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Woodmere Nursery Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 14 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.36 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 36 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/58159/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Stream flows through the Woodmere Nursury from small culvert on burn pile access road to the Highway.  Electrofishing conducted.  Abundant cover available primarily as overhanging vegetation and cobbles. Upstream culvert under Highway 16 has been recently replaced by horizontal drilling.  Baffles at upstream crossing.  Coho fry captured below the Highway crossing. </td>
   </tr>
 </tbody>
@@ -979,26 +987,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.9 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 50 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.9 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.8 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 42 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.9 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 50 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.9 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.8 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 42 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123445/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Important migration corridor to Tyee Lake.  Large outlet drop seems unliklely passabel by any life stage or species. </td>
   </tr>
 </tbody>
@@ -1030,26 +1040,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Tyee Lake Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.85 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 20.8 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 24 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Tyee Lake Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.85 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 20.8 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 24 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123446/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Important migration corridor to get to Tyee Lake from Bulkley River.  Crossing does not appear to be barrier to most life stages/species at most flows. </td>
   </tr>
 </tbody>
@@ -1081,26 +1093,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Blunt Creek FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.9 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 13 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.25 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.73 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 31 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Blunt Creek FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.9 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 13 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.25 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.73 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 31 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123794/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Smaller stream with good flow.  Salmon points noted in adjacent stream. Recommend sampling upstream and downstream and habitat assessment of stream at associated PSCIS crossing 123785. </td>
   </tr>
 </tbody>
@@ -1132,26 +1146,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Blunt Creek FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.9 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 15 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.17 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.42 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 29 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Blunt Creek FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.9 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 15 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.17 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.42 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 29 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123795/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Smaller stream with good flow.  Salmon point (juvenile) noted upstream. Recommend sampling upstream and downstream and habitat assessment of stream at associated PSCIS crossing 123785. </td>
   </tr>
 </tbody>
@@ -1183,26 +1199,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 99 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 11.2 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 42 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 99 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 11.2 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 42 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124487/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Unpassable to all life stages and species. Fill depth is approximately 35m. Salomid (50cm) observed trying to ascend to outlet of main pipe. </td>
   </tr>
 </tbody>
@@ -1234,26 +1252,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Lawson Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 14.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3.6 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 21 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Lawson Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 14.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3.6 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 21 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124500/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Wetland type habitat upstream with stream channel containing abundant gravels downstream. </td>
   </tr>
 </tbody>
@@ -1285,26 +1305,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Lawson Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 25 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4.5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 34 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Lawson Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 25 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4.5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 34 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124501/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Fully embedded and baffled culvert.  Likely passable for all salmonid adults. </td>
   </tr>
 </tbody>
@@ -1336,26 +1358,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Lawson Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 16 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5.3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 24 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Lawson Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 16 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5.3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 24 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124504/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Partially embedded with several large boulders (30 - 50cm) in culvert.  No outlet drop at the time of survey but there may be at lowest flow levels. </td>
   </tr>
 </tbody>
@@ -1387,26 +1411,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Schnider Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 11 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 31 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Schnider Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 11 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 31 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/195288/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Wetland type habitat upstream and downstream.  Drone flight conducted upstream to map immediate area upstream. </td>
   </tr>
 </tbody>
@@ -1438,26 +1464,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.8 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.66 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.4 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 31 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.8 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.66 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.4 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 31 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/195290/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Flows into Deep Creek downstream.  Electrofished upstream and downstream.  Wetland type habitat upstream with CO captured below only.  Candidate for backwatering? </td>
   </tr>
 </tbody>
@@ -1489,26 +1517,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Morice-Owen FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 27 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.24 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.2 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 29 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Morice-Owen FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 27 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.24 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.2 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 29 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/197360/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Wetland type habitat for first 300m upstream then 3m wide channel with cover available in all forms with pools suitable for juvenile RB and CO overwintering.  Abundant gravels and small cobbles throught suitable for CO or RB/ST spawning. </td>
   </tr>
 </tbody>
@@ -1540,26 +1570,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4.2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 24 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 12.5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 29 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4.2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 24 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 12.5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 29 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800060/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Habitat confirmation and minnowtrapping completed. </td>
   </tr>
 </tbody>
@@ -1591,26 +1623,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Oval Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 24 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 11.1 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 39 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Oval Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 24 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 11.1 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 39 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800062/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Culvert is likely as passable for most species and life stages at most non-peak and non-lowest flows. Streamkeepers have observed fry moving through culvert in overwintering studies. </td>
   </tr>
 </tbody>
@@ -1642,26 +1676,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> CN Railway </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.9 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 25 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3.5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 14 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> CN Railway </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.9 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 25 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3.5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 14 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800076/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Targeted for habitat confirmation due to upstream aggradation and dredging associated impacts on coho </td>
   </tr>
 </tbody>
@@ -1693,26 +1729,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Buck Flats Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 12 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.4 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.49 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5.1 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 31 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Buck Flats Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 12 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.4 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.49 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5.1 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 31 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800092/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Large tributary on section of tributary connected to salmon bearing Buck Creek.  Fish rising in outlet pool (estimated 130mm).  Some cattle access points downstream. </td>
   </tr>
 </tbody>
@@ -1744,26 +1782,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.75 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 25 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6.3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 24 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.75 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 25 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6.3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 24 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800213/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Habitat confirmation and sampling completed. </td>
   </tr>
 </tbody>
@@ -1795,26 +1835,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 15 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4.7 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 14 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 15 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4.7 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 14 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1801069/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Targeted for habitat confirmation due to aggradation and dredging associated impacts on coho. </td>
   </tr>
 </tbody>
@@ -1846,26 +1888,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> CN Railway </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 17 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.58 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3.8 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 39 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> CN Railway </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 17 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.58 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3.8 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 39 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1805606/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Approximately 17m from the outlet to the Bulkley River. </td>
   </tr>
 </tbody>
@@ -1897,26 +1941,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> CN Railway </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 15 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.27 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5.3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 29 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> CN Railway </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 15 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.27 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5.3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 29 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1805608/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> CN crossing has had Newbury riffles constructed to decrease the size of the outlet drop but drop still present. Abundant gravels suitable for spawning chinook and coho present. Some deep pools available for fry/parr overwintering. </td>
   </tr>
 </tbody>
@@ -1948,26 +1994,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 14 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3.2 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 18 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Potential </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 14 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3.2 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 18 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Potential </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800064/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Culvert is likely as passable as natural channel for all species and life stages at most flows. </td>
   </tr>
 </tbody>
@@ -1999,26 +2047,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> CN Railway </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Concrete Box </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3.2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 7.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3.2 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> CN Railway </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Concrete Box </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3.2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 7.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3.2 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800066/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Appears passable. No concerns. </td>
   </tr>
 </tbody>
@@ -2050,26 +2100,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Perow Loop Rd </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 32 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.33 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 34 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Perow Loop Rd </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 32 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.33 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 34 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800068/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Private land.  Channelized downstream with concrete slab riprap in place. Private driveway is crossing 1801071 upstream. </td>
   </tr>
 </tbody>
@@ -2101,26 +2153,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.8 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 25 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Low </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 19 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Potential </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.8 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 25 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Low </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 19 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Potential </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800071/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Possible value for coho rearing.  Downstream CNRail crossing could not be located at time of assessment.  Tire at inlet. </td>
   </tr>
 </tbody>
@@ -2152,26 +2206,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.9 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 25 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Low </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Potential </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.9 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 25 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Low </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Potential </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800073/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Small ditch likely modified due to adjacent agriculture.  Culvert fully passabel at the time of the survey because backwatered 100%.  Grasses around inlet and outlet make locating the culvert challenging. </td>
   </tr>
 </tbody>
@@ -2203,26 +2259,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Parrot FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Pipe Arch </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 7 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 21 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Parrot FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Pipe Arch </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 7 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 21 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800472/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Newly constructed passable structure. </td>
   </tr>
 </tbody>
@@ -2254,26 +2312,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Spur off Parrot FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Ford </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Unknown </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Spur off Parrot FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Ford </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Unknown </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800868/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Ford.  No issues. </td>
   </tr>
 </tbody>
@@ -2305,26 +2365,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Unnamed </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Ford </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Unknown </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Unnamed </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Ford </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Unknown </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1801077/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Ford.  No issues. </td>
   </tr>
 </tbody>
@@ -2356,26 +2418,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Spur off Parrot FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.4 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 21 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Spur off Parrot FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.4 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 21 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1802520/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Stream drains Sam Lake.  Old log bridge type stucture tha is collaping with round culvert inserted.  Pipe contains beaver debris. Wetland habitat upstream. </td>
   </tr>
 </tbody>
@@ -2407,26 +2471,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Spur off Parrot FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Ford </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Unknown </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Spur off Parrot FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Ford </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Unknown </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1803661/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Ford.  No issues. </td>
   </tr>
 </tbody>
@@ -2458,26 +2524,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Balsam FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Bridge </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 12 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Balsam FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Bridge </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 12 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1804151/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Bridge. No issues. </td>
   </tr>
 </tbody>
@@ -2509,26 +2577,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Balsam FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 20 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.27 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 34 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Balsam FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 20 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.27 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 34 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1804152/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Good flow. Stream likley has inventory information. Should check with Canfor. </td>
   </tr>
 </tbody>
@@ -2560,26 +2630,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Balsam FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Bridge </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 9 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Balsam FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Bridge </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 9 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1804153/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Bridge. No issues. </td>
   </tr>
 </tbody>
@@ -2611,26 +2683,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Bob Creek FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Bridge </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4.8 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 13 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Bob Creek FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Bridge </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4.8 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 13 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1804851/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Bridge. No issues. </td>
   </tr>
 </tbody>
@@ -2662,26 +2736,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Carrier FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 15.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Low </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 34 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Carrier FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 15.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Low </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 34 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1804986/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Suspect no fish.  Multiple fish survey sites located downstream.  Dry at time of survey. </td>
   </tr>
 </tbody>
@@ -2713,26 +2789,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Parrot FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Pipe Arch </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 18 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Parrot FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Pipe Arch </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 18 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1805182/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Newly constructed passable structure. </td>
   </tr>
 </tbody>
@@ -2764,26 +2842,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Goosley North Rd </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Bridge </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4.7 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 16 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Goosley North Rd </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Bridge </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4.7 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 16 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1805183/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Bridge. </td>
   </tr>
 </tbody>
@@ -2815,26 +2895,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Spur off Parrot FSR </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Ford </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Unknown </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Spur off Parrot FSR </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Ford </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Unknown </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1805455/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Ford.  No issues. </td>
   </tr>
 </tbody>
@@ -2866,26 +2948,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> CN Railway </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Bridge </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 18 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> CN Railway </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Bridge </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 18 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1805595/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Appears passable. No concerns. </td>
   </tr>
 </tbody>
@@ -2917,26 +3001,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Private </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.25 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.45 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.6 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 31 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Private </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.25 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.45 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.6 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 31 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/14000079/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Extensive rearing habitat and gravels suitable for spawning.  Stream eventually flows into top end of Owen Lake. </td>
   </tr>
 </tbody>
@@ -2968,26 +3054,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Perow Station Rd </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Bridge </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> NA </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Perow Station Rd </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Bridge </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> NA </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/2020082701/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Private bridge approximately 30 upstrea of confulence with Byman Creek. </td>
   </tr>
 </tbody>
@@ -3019,26 +3107,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> CN Railway </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 22 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 14 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> CN Railway </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 22 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 14 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/2020083101/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> Passable and fully backwatered structure.  Landowner reports that lamprey (~40cm x 20) at crossing inside of the culvert in the past. </td>
   </tr>
 </tbody>
@@ -3070,26 +3160,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> North Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Oval Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 25 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 9 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 34 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> North Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Oval Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 25 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 9 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 34 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3067/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> No habitat confirmation conducted in 2020. Fins 2009 reports 60% gradient for 50m located 200m downstream of crossing.  Stream measuremnt estimated. </td>
   </tr>
 </tbody>
@@ -3121,26 +3213,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 53 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.36 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 34 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 53 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.36 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 34 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/58158/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> New culvert horizontally drilled under highway in 2017. Structure has baffles made of oured concrete and boulders.  Often deep pools up to 50cm before baffles. Baffles seem sarp and have potential to injure fish ascending? </td>
   </tr>
 </tbody>
@@ -3172,26 +3266,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Tyee Lake Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 18.1 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.8 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 29 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Tyee Lake Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 18.1 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.8 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 29 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123463/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> No habitat confirmation conducted in 2020. Newly replaced crossing.  ID# 8 21 18 01 . </td>
   </tr>
 </tbody>
@@ -3223,26 +3319,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Lawson Road </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Round Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.8 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 21 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 1.2 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3.2 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Medium </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 3 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 10 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 39 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Lawson Road </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Round Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.8 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 21 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 1.2 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3.2 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Medium </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 3 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 10 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 39 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Barrier </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124502/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> No habitat confirmation conducted in 2020. Good flow.  Adjacent land owner reports that this stream consistently flows year round and that the culvert under the railway has large outlet drop. This crossing and the crossing under the railway should be followed up in the future. </td>
   </tr>
 </tbody>
@@ -3274,26 +3372,28 @@
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> swr_score </th>
    <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> final_score </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> barrier_result </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
    <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> assessment_comment </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Highway 16 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Oval Culvert </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 4 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 2.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0.5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 14 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> High </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 5 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 0 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 6 </td>
-   <td style="text-align:right;border: 1px solid black;min-width: 0.3in; "> 11 </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 0.3in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Highway 16 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Oval Culvert </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 4 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0.5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 14 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> High </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 5 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 0 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 6 </td>
+   <td style="text-align:right;border: 1px solid black;min-width: 0.2in; "> 11 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> Passable </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.2in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/195289/crossing_all.JPG" style="     ">crossing</a> </td>
    <td style="text-align:left;border: 1px solid black;min-width: 2in; "> No habitat confirmation in 2020. Culvert is now embedded where as it was not in 2014 surveys.  Passable structure with no issues. </td>
   </tr>
 </tbody>
