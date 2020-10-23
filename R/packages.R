@@ -7,4 +7,5 @@ pacman::p_load(
   janitor,
   knitr,
   kableExtra,
-  plotKML)
+  plotKML,
+  magick)

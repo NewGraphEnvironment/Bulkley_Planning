@@ -25,6 +25,6 @@ photos_stack <- c(photos_stack1, photos_stack2)
 photos_stacked <- image_append(image_scale(photos_stack, "x200"), stack = T)
 photos_stacked
 
-image_write(photos_stacked, path = paste0(getwd(), '/data/photos/', site_id, '/culvert_all.JPG'), format = 'jpg')
+image_write(photos_stacked, path = paste0(getwd(), '/data/photos/', site_id, '/crossing_all.JPG'), format = 'jpg')
 
   

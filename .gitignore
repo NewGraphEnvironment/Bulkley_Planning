@@ -12,4 +12,4 @@ R/contract-subin-signature.R
 first.pdf
 data/~$*
 !outgoing
-
+*.tmp

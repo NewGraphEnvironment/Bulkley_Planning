@@ -1,6 +1,6 @@
 <kml xmlns:xsd="http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd" xmlns:xmlns="http://www.opengis.net/kml/2.2/" version="1.0">
   <Document>
-    <name>data/outgoing/2019-023_Bulkley_fish_passage_habitat_assessments_20201022_0752.kml</name>
+    <name>data/outgoing/2020_bulkley_HABITAT_assessments_20201023_0841.kml</name>
     <open>1</open>
     <Folder>
       <name>SpatialPointsDataFrame</name>
@@ -574,7 +574,7 @@
    <td style="text-align:right;border: 1px solid black;"> 3.0 </td>
    <td style="text-align:right;border: 1px solid black;"> 170 </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123445/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High conductivity and low flows at the time of survey. No barriers between culvert and Bulkley River. Goes subsurface near river flood plain, possibly at floodplain level. Mike Ridsdale from Wet’suwet’en reports historic CT attempting to ascend the culvert and 5lb Steelhead captured above the culvert. Some gravels suitable for CT spawning. Visual observation (3 approximately 50mm, and 1 approximately 90mm) unknown fish species. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat but important migration corridor. High conductivity and low flows at the time of survey. No barriers between culvert and Bulkley River. Goes subsurface near river flood plain, possibly at floodplain level. Mike Ridsdale (Office of Wet’suwet’en) reports CT attempting to ascend the culvert and 5lb Steelhead captured above the culvert in past. Some gravels suitable for CT spawning. Visual observations of fry/juveniles (3 @ 50mm, and 1 @ 90mm) unknown species. </td>
   </tr>
   <tr>
    <td style="text-align:left;border: 1px solid black;"> Tyhee Creek </td>
@@ -622,7 +622,7 @@
    <td style="text-align:right;border: 1px solid black;"> 0.2 </td>
    <td style="text-align:right;border: 1px solid black;"> 100 </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123446/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Wetland habitat on private land. Beaver activity noted throughout, important migration corridor but currently functioning as wetland within area of cattle ranching/agriculture. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Important migration corridor. Wetland habitat on private land. Beaver activity noted throughout area surveyed. Wetland habitat within area of cattle ranching/agriculture between Tyhee Lake Road and Tyhee Lake </td>
   </tr>
 </tbody>
 </table>]]></description>
@@ -659,7 +659,7 @@
    <td style="text-align:right;border: 1px solid black;"> 5.0 </td>
    <td style="text-align:right;border: 1px solid black;"> 250 </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123794/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Smaller stream with good flow and frequent patches of gravel suitable for spawning for CO or resident CT and DV. Bottom half of site is lower gradient than top. In top section occasional large woody debris steps of up to 40cm high. Pools infrequent, but some suitable for overwintering. FISS records indicate salmon species (SA) nearby. Surveyed for 350m upstream. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Smaller stream with good flow and frequent patches of gravel suitable for spawning for CO or resident CT and DV. Bottom half of site is lower gradient than top. In top section occasional large woody debris steps of up to 40cm high. Pools infrequent, but some suitable for overwintering. FISS records indicate salmon species (SA) nearby. Surveyed for 350m upstream. Future fish sampling recommended. </td>
   </tr>
   <tr>
    <td style="text-align:left;border: 1px solid black;"> Unnamed tributary to Blunt Creek </td>
@@ -670,7 +670,7 @@
    <td style="text-align:right;border: 1px solid black;"> 9.6 </td>
    <td style="text-align:right;border: 1px solid black;"> 525 </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123794/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Mature channel with decent complexity, abundant gravel suitable for CO or CT and DV spawning. Some small woody debris/large woody debris steps (30-50cm) intermittently starting about 400m above the culvert. Fish observed approximately 500m upstream of the culvert. Permanent falls at the top of the site. Few pools suitable for overwintering and rearing for resident CT and DV . </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Mature channel with decent complexity, abundant gravel suitable for CO or CT and DV spawning. Some small woody debris/large woody debris steps (30-50cm) intermittently starting about 400m above the culvert. Fish observed approximately 500m upstream of the culvert. Permanent falls at the top of the site. Few pools suitable for overwintering and rearing for resident CT and DV . Future fish sampling recommended. </td>
   </tr>
 </tbody>
 </table>]]></description>
@@ -707,7 +707,7 @@
    <td style="text-align:right;border: 1px solid black;"> 3.7 </td>
    <td style="text-align:right;border: 1px solid black;"> 200 </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123795/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Smaller stream with somewhat low complexity. Occasional deep pools and primarily glide habitat. Abundant gravels present but only patches were unembedded. FISS records indicate salmon species (SA) nearby. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Smaller stream with somewhat low complexity. Occasional deep pools and primarily glide habitat. Abundant gravels present but only patches were unembedded. FISS records indicate salmon species (SA) nearby within same stream network. Future fish sampling recommended. </td>
   </tr>
   <tr>
    <td style="text-align:left;border: 1px solid black;"> Unnamed tributary to Blunt Creek </td>
@@ -718,7 +718,7 @@
    <td style="text-align:right;border: 1px solid black;"> 7.2 </td>
    <td style="text-align:right;border: 1px solid black;"> 650 </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123795/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Deep glide character prevalent, gradients leveling out at top end of site, with primarily shrub and wetland riparian area. Top end of site is a Ford (#123796). Very occasional pockets of gravel suitable for spawning. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Deep glide character prevalent, gradients leveling out at top end of site, with primarily shrub and wetland riparian area. Top end of site is a Ford (#123796). Very occasional pockets of gravel suitable for spawning. Future fish sampling recommended. </td>
   </tr>
 </tbody>
 </table>]]></description>
@@ -1093,7 +1093,7 @@
    <td style="text-align:right;border: 1px solid black;"> 1200 </td>
    <td style="text-align:left;border: 1px solid black;"> yes </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800060/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat, large stream with mature cottonwood riparian zone. Good channel complexity including numerous deep pools up to 2m and frequent glide sections 1m deep throughout. Extensive areas of gravel suitable for spawning for resident and anadromous species. Rangeland with several cattle access areas. Historic landslide at top end of site. Over wintering habitat for all life stages. Beaver evidence with blown out dam present. Abundant large woody debris. Visual observation unknown fish species (55mm). </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat, large stream with mature cottonwood riparian zone. Good channel complexity including numerous deep pools up to 2m and frequent glide sections 1m deep throughout. Extensive areas of gravel suitable for spawning for resident and anadromous species. Rangeland with several cattle access areas. Historic landslide at top end of site. Over wintering habitat for all life stages. Beaver evidence with blown out dam present. Abundant large woody debris. Future fish sampling recommended to determine densities of target species upstream and downstream of culverts. </td>
   </tr>
   <tr>
    <td style="text-align:left;border: 1px solid black;"> Richfield Creek </td>
@@ -1105,7 +1105,7 @@
    <td style="text-align:right;border: 1px solid black;"> 300 </td>
    <td style="text-align:left;border: 1px solid black;"> yes </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800060/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate to High value habitat. Channel structure seems to be simplified downstream of culvert for about 80m likely due to high velocities out of pipes and there are no pools in that section. Stream flows through residential area with some deep pools, glides to over 1m deep spaced primarily on corners. Riparian is mature Cottonwood but is very narrow in most areas where stream was surveyed and removed at some spots near houses. Evidence of large woody debris removal from channel (chainsaw) and some corners are armoured with rock, concrete and old vehicles. Some unembedded gravels present throughout. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate to high value habitat. Channel structure seems to be simplified downstream of culvert for about 80m likely due to high velocities out of pipes and there are no pools in that section. Stream flows through residential area with some deep pools, glides to over 1m deep spaced primarily on corners. Riparian is mature Cottonwood but is very narrow in most areas where stream was surveyed and removed at some spots near houses. Evidence of large woody debris removal from channel (chainsaw) and some corners are armoured with rock, concrete and old vehicles. Some unembedded gravels present throughout. Future fish sampling recommended to determine densities of target species upstream and downstream of culverts. </td>
   </tr>
 </tbody>
 </table>]]></description>
@@ -1168,7 +1168,7 @@
    <td style="text-align:right;border: 1px solid black;"> 300 </td>
    <td style="text-align:left;border: 1px solid black;"> yes </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800062/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Straight channel with low complexity. Cattle impacts evident on banks throughout. Suspect channel has been modified. Flows through rangeland. Minimal cover with no pools, and extensive riffles. May be valuable fry rearing habitat especially in low velocities margins. Accessed stream downstream of CN rail bridge. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Straight channel with low complexity. Cattle impacts evident on banks throughout. Suspect channel has been modified. Flows through rangeland. Minimal cover with no pools, and extensive riffles. May be valuable fry rearing habitat especially in low velocities margins. Also accessed stream downstream of CN rail bridge. </td>
   </tr>
 </tbody>
 </table>]]></description>
@@ -1242,7 +1242,7 @@
    <td style="text-align:right;border: 1px solid black;"> 3.0 </td>
    <td style="text-align:right;border: 1px solid black;"> 70 </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800092/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Surveyed to confluence with Buck Creek (approximately 70m). Didymo potentially present (photo). Abundant small woody debris and overhanging vegetation near confluence. No barriers observed, fish (130mm) in culver outlet pool. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Surveyed to confluence with Buck Creek (approximately 70m). Didymo potentially present (photo). Abundant small woody debris and overhanging vegetation near confluence. No barriers observed, fish (130mm) in culvert outlet pool. Future fish sampling recommended. </td>
   </tr>
   <tr>
    <td style="text-align:left;border: 1px solid black;"> Unnamed Tributary to Buck Creek </td>
@@ -1253,7 +1253,7 @@
    <td style="text-align:right;border: 1px solid black;"> 2.5 </td>
    <td style="text-align:right;border: 1px solid black;"> 535 </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800092/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat for rearing, infrequent shallow pools and rare pockets of gravel suitable for spawning. Stream appears to be aggraded throughout with side bars common. Stream connects to buck Creek with known CO and wetland areas mapped upstream (approx. 200m). young of year salmonid (110mm) observed near start of survey, upstream of culvert. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat for rearing, infrequent shallow pools and rare pockets of gravel suitable for spawning. Stream appears to be aggraded throughout with side bars common. Stream connects to buck Creek with known CO and wetland areas mapped upstream (approx. 200m). young of year salmonid (110mm) observed near start of survey, upstream of culvert. Future fish sampling recommended. </td>
   </tr>
 </tbody>
 </table>]]></description>
@@ -1344,7 +1344,7 @@
    <td style="text-align:right;border: 1px solid black;"> 3.0 </td>
    <td style="text-align:right;border: 1px solid black;"> 800 </td>
    <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1801069/crossing_all.JPG" style="     ">crossing</a> </td>
-   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat, with known CO use, possibly other salmonids. MoTI dredged upstream of culvert annually which requires fry salvage with water running over highway at times. Active cut approximately 100m upstream of culvert, constantly depositing sediment into stream. Potential to landslide and block stream flow. Extensive areas of gravels suitable for CO spawning. Mature Cottonwood riparian surrounding with persistent land impacts on right bank and armouring on private road. Few pools, undercut banks and overhanging vegetation providing dominant cover throughout. Large woody debris present, DP are rare, some glides up to 50cm deep. </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat, with known CO use, possibly other salmonids. MoTI dredged upstream of culvert annually which requires fry salvage with water running over highway at times. Active cut approximately 100m upstream of culvert, constantly depositing sediment into stream. Potential to landslide and block stream flow. Extensive areas of gravels suitable for CO spawning. Mature Cottonwood riparian surrounding with persistent land impacts on right bank and armouring on private road. Few pools, undercut banks and overhanging vegetation providing dominant cover throughout. Large woody debris present, deep pools are rare, some glides up to 50cm deep. </td>
   </tr>
   <tr>
    <td style="text-align:left;border: 1px solid black;"> Barren Creek </td>

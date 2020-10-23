@@ -90,13 +90,16 @@ shape = "http://maps.google.com/mapfiles/kml/paddle/A.png"
 
 
 ##get teh name of the folder we are in
-bname <- basename(dirname(dirname(getwd())))
+# bname <- basename(dirname(dirname(getwd())))
+
+##or alternatively - give the file an identifier
+bname <- "2020_bulkley"
 
 
 # kml_open("data/outgoing/barrier_assessments.kml")
-kml_open(paste0("data/outgoing/",bname, "_barrier_assessments.kml"))
+kml_open(paste0("data/outgoing/",bname, "_PASSAGE_assessments.kml"))
 kml_layer(df, shape = df$shape, colour = df$color, labels = df$label, html.table = df$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close(paste0("data/outgoing/",bname, "_barrier_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
+kml_close(paste0("data/outgoing/",bname, "_PASSAGE_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
 
 ```
 
@@ -178,9 +181,9 @@ shape = "http://maps.google.com/mapfiles/kml/shapes/fishing.png"
 
 
 # filename <- paste0(name,format(Sys.time(),"_%Y%m%d_%H%M.kml"))
-kml_open(paste0("data/outgoing/",bname, "_habitat_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
+kml_open(paste0("data/outgoing/",bname, "_HABITAT_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
 kml_layer(df_kml, shape = shape, colour = 'yellow', labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
-kml_close(paste0("data/outgoing/",bname, "_habitat_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
+kml_close(paste0("data/outgoing/",bname, "_HABITAT_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
 
 ```
 
