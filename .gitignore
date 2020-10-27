@@ -13,3 +13,6 @@ first.pdf
 data/~$*
 !outgoing
 *.tmp
+temp
+*.JPG
+!crossing_all.JPG

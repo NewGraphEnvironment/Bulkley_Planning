@@ -1,22 +1,22 @@
-conn <- dbConnect(
-  RPostgres::Postgres(),
-  dbname = 'postgis',
-  host = 'localhost',
-  port = 5432,
-  user = 'postgres',
-  password = 'postgres'
-)
+# conn <- dbConnect(
+#   RPostgres::Postgres(),
+#   dbname = 'postgis',
+#   host = 'localhost',
+#   port = 5432,
+#   user = 'postgres',
+#   password = 'postgres'
+# )
 
-##make a function to retrieve the watershed info 
-get_watershed <- function(fish_habitat_info){
-  mapply(fwapgr::fwa_watershed, blue_line_key = fish_habitat_info$blue_line_key,
-         downstream_route_measure = fish_habitat_info$downstream_route_measure) %>%
-    purrr::set_names(nm = fish_habitat_info$pscis_model_combined_id) %>%
-    discard(function(x) nrow(x) == 0) %>% ##remove zero row tibbles with https://stackoverflow.com/questions/49696392/remove-list-elements-that-are-zero-row-tibbles
-    data.table::rbindlist(idcol="pscis_model_combined_id") %>%
-    distinct(pscis_model_combined_id, .keep_all = T) %>% ##there are duplicates we should get rid of
-    st_as_sf()
-}
+# ##make a function to retrieve the watershed info 
+# get_watershed <- function(fish_habitat_info){
+#   mapply(fwapgr::fwa_watershed, blue_line_key = fish_habitat_info$blue_line_key,
+#          downstream_route_measure = fish_habitat_info$downstream_route_measure) %>%
+#     purrr::set_names(nm = fish_habitat_info$pscis_model_combined_id) %>%
+#     discard(function(x) nrow(x) == 0) %>% ##remove zero row tibbles with https://stackoverflow.com/questions/49696392/remove-list-elements-that-are-zero-row-tibbles
+#     data.table::rbindlist(idcol="pscis_model_combined_id") %>%
+#     distinct(pscis_model_combined_id, .keep_all = T) %>% ##there are duplicates we should get rid of
+#     st_as_sf()
+# }
 
 
 ##function to trim up sheet and get names (was previously source from altools package)
@@ -69,27 +69,6 @@ make_kml_col <- function(df){
   
 }
 
-# ##this is how we make html tables.  Can add colors or whatever -https://stackoverflow.com/questions/50199845/converting-dataframe-in-required-html-table-format-in-r
-# make_html_tbl <- function(df, priorities) {
-#   
-#   df2 <- df %>% 
-#     dplyr::select(road_name, crossing_subtype, cv_diam_m = diameter_or_span_meters,
-#                   cv_lngth_m = length_or_width_meters, outlet_drop_meters, cv_slope = culvert_slope_percent, 
-#                   chan_width = downstream_channel_width_meters,
-#                   habitat_value, cv_lgth_score = culvert_length_score, embed_score, outlet_drop_score,
-#                   culvert_slope_score, swr_score = stream_width_ratio_score, final_score,
-#                   barrier_result,assessment_comment)
-#   df <- df %>% 
-#     mutate(html_tbl = knitr::kable(df2) %>% 
-#              # All cells get a border
-#              row_spec(0:nrow(df2), extra_css = "border: 1px solid black;") %>% 
-#              row_spec(0, background = "yellow") %>% 
-#              kableExtra::column_spec(column = 16, width_min = '2in') %>% 
-#              kableExtra::column_spec(column = 1:15, width_min = '0.3in')
-#     )
-#   return(df)
-# }
-
 ##this is how we make html tables.  Can add colors or whatever -https://stackoverflow.com/questions/50199845/converting-dataframe-in-required-html-table-format-in-r
 make_html_tbl <- function(df) {
   
@@ -127,30 +106,41 @@ make_html_tbl_hab <- function(df) {
     )
 }
 
-#can't get the link text to work.... 
-##mutate(photo = cell_spec('copy_url', "html", link = photo_link)) %>%
+##here is how we get the watershed codes - thanks Simon!!!! -- we should move this out of the functions file to a datbase of some sort I think
+# wsheds <- dbGetQuery(conn, "SELECT DISTINCT ON (pscis_model_combined_id)
+#     a.pscis_model_combined_id, 
+#     a.linear_feature_id,
+#     b.watershed_code_50k,
+#     substring(b.watershed_code_50k from 1 for 3)
+#       ||'-'||substring(b.watershed_code_50k from 4 for 6)
+#       ||'-'||substring(b.watershed_code_50k from 10 for 6)
+#       ||'-'||substring(b.watershed_code_50k from 16 for 6)
+#       ||'-'||substring(b.watershed_code_50k from 24 for 6)
+#       ||'-'||substring(b.watershed_code_50k from 30 for 6)
+#       ||'-'||substring(b.watershed_code_50k from 36 for 6) as watershed_code_50k_parsed,
+#     b.blue_line_key_20k,
+#     b.watershed_key_20k,
+#     b.blue_line_key_50k,
+#     b.watershed_key_50k,
+#     b.match_type
+# FROM fish_passage.pscis_model_combined a
+# LEFT OUTER JOIN whse_basemapping.fwa_streams_20k_50k b
+# ON a.linear_feature_id = b.linear_feature_id_20k
+# WHERE a.watershed_group_code IN ('BULK','MORR')
+# ORDER BY a.pscis_model_combined_id, b.match_type;")
 
-##here is how we get the watershed codes - thanks Simon!!!!
-wsheds <- dbGetQuery(conn, "SELECT DISTINCT ON (pscis_model_combined_id)
-    a.pscis_model_combined_id, 
-    a.linear_feature_id,
-    b.watershed_code_50k,
-    substring(b.watershed_code_50k from 1 for 3)
-      ||'-'||substring(b.watershed_code_50k from 4 for 6)
-      ||'-'||substring(b.watershed_code_50k from 10 for 6)
-      ||'-'||substring(b.watershed_code_50k from 16 for 6)
-      ||'-'||substring(b.watershed_code_50k from 24 for 6)
-      ||'-'||substring(b.watershed_code_50k from 30 for 6)
-      ||'-'||substring(b.watershed_code_50k from 36 for 6) as watershed_code_50k_parsed,
-    b.blue_line_key_20k,
-    b.watershed_key_20k,
-    b.blue_line_key_50k,
-    b.watershed_key_50k,
-    b.match_type
-FROM fish_passage.pscis_model_combined a
-LEFT OUTER JOIN whse_basemapping.fwa_streams_20k_50k b
-ON a.linear_feature_id = b.linear_feature_id_20k
-WHERE a.watershed_group_code IN ('BULK','MORR')
-ORDER BY a.pscis_model_combined_id, b.match_type;")
+make_photo_comp_cv <- function(site_id){
+  photos_images1 <- list.files(path = paste0(getwd(), '/data/photos/', site_id), full.names = T) %>% 
+    stringr::str_subset(., 'barrel|outlet|upstream') %>% 
+    image_read() 
+  photos_images2 <- list.files(path = paste0(getwd(), '/data/photos/', site_id), full.names = T) %>% 
+    stringr::str_subset(., 'downstream|road|inlet') %>% 
+    image_read() 
+  photos_stack1 <-image_append(image_scale(photos_images1, "x420")) ##1/3 the width 373.33 and half the original height
+  photos_stack2 <- image_append(image_scale(photos_images2, "x420")) 
+  photos_stack <- c(photos_stack1, photos_stack2)  
+  photos_stacked <- image_append(image_scale(photos_stack), stack = T)
+  image_write(photos_stacked, path = paste0(getwd(), '/data/photos/', site_id, '/crossing_all.JPG'), format = 'jpg')
+}
 
-DBI::dbDisconnect(conn = conn)
+# DBI::dbDisconnect(conn = conn)
