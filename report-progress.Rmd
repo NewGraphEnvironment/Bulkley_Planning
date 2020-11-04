@@ -24,14 +24,11 @@ pscis_phase1_sf <- import_pscis(workbook_name = 'pscis_phase1.xlsm') %>%
 pscis_phase2_sf <-  import_pscis(workbook_name = 'pscis_phase2.xlsm') %>%  
   sf::st_as_sf(coords = c("easting", "northing"), 
                crs = 26909, remove = F)
-```
 
-```{r clear-kmls}
-##we need to clear out the old kmls
-##now we will zip up the kml files in the data folder and rename with kmz
-files_to_clear <- paste0("data/outgoing/", list.files(path = "data/outgoing/", pattern = "\\.kml$")) 
-file.remove(files_to_clear)
-
+##import phase 2 data and turn into spatial file
+pscis_reassessments_sf <-  import_pscis(workbook_name = 'pscis_reassessments.xlsm') %>%  
+  sf::st_as_sf(coords = c("easting", "northing"), 
+               crs = 26909, remove = F)
 ```
 
 ```{r burn-kmls}
@@ -42,9 +39,9 @@ workbooks <-  list.files(path = 'data', pattern = "pscis", all.files = F) %>%
 ##make a function to import and add the source
 make_pscis_kml <- function(workbook){
   import_pscis(workbook_name = workbook)  %>% 
-    make_kml_col()  %>% 
-    dplyr::group_split(site_id) %>%
-    purrr::map(make_html_tbl) %>%
+    make_kml_col()  %>%  
+    # dplyr::group_split(site_id) %>% ##going to do this later
+    # purrr::map(make_html_tbl) %>% ##going to do this later
     dplyr::bind_rows() %>% 
     dplyr::mutate(source = tools::file_path_sans_ext(workbook))
 }
@@ -62,15 +59,63 @@ df <- workbooks %>%
   dplyr::distinct(site_id, .keep_all = T)
   # dplyr::select(road_name:barrier_result, photo_link, assessment_comment)
 
+#if we want the mapsheet we need to get it before making the html table. no time right now.
+##get the mapsheet id for each of the crossings
+##get the mapsheet id
+conn <- dbConnect(
+  RPostgres::Postgres(),
+  dbname = 'postgis',
+  host = 'localhost',
+  port = 5432,
+  user = 'postgres',
+  password = 'postgres'
+)
 
-# df <- import_pscis(workbook_name = workbook_name) %>% 
-#   make_kml_col()  %>% 
-#   dplyr::group_split(site_id) %>%
-#   purrr::map(make_html_tbl) %>%
-#   dplyr::bind_rows() %>% 
-#   dplyr::mutate(source = tools::file_path_sans_ext(workbook_name))
-# 
+##list column names in a table
+# dbGetQuery(conn,
+#            "SELECT column_name,data_type
+#            FROM information_schema.columns
+#            WHERE table_name='dbm_mof_50k_grid'")
 
+##make into spatial object
+df_sf <- df %>%
+  sf::st_as_sf(coords = c("easting", "northing"),
+               crs = 26909, remove = F) %>%
+  st_transform(crs = 3005) 
+
+
+# load to database
+st_write(obj = df_sf, dsn = conn, Id(schema= "working", table = "misc_points"))
+
+# sf doesn't automagically create a spatial index or a primary key
+res <- dbSendQuery(conn, "CREATE INDEX ON working.misc_points USING GIST (geometry)")
+dbClearResult(res)
+res <- dbSendQuery(conn, "ALTER TABLE working.misc_points ADD PRIMARY KEY (site_id)")
+dbClearResult(res)
+
+
+
+mapsheet_id <- dbGetQuery(conn,
+                                  "
+                                  SELECT x.site_id, y.map_tile_display_name
+                                  FROM working.misc_points x
+                                  INNER JOIN
+                                  whse_basemapping.dbm_mof_50k_grid y
+                                  ON ST_Intersects(x.geometry,y.geom)")
+dbDisconnect(conn = conn)
+
+##add the mapsheet back to the df
+df <- left_join(
+  df,
+  mapsheet_id,
+  by = "site_id"
+)
+
+
+df <- df %>% 
+  dplyr::group_split(site_id) %>% 
+  purrr::map(make_html_tbl) %>% 
+  dplyr::bind_rows()
 
 coords <- df %>% select(easting, northing)
 proj4string <- sp::CRS("+init=epsg:32609")
@@ -79,8 +124,16 @@ df <- df %>%
   plotKML::reproject()
 
 ##create the outgoing directory if it is not already there
+targetdir = paste0(getwd(), "/data")
 targetdir = paste0(getwd(), "/data/outgoing")
 dir.create(targetdir)
+
+
+##we need to clear out the old kmls
+##now we will zip up the kml files in the data folder and rename with kmz
+files_to_clear <- paste0("data/outgoing/", list.files(path = "data/outgoing/", pattern = "\\.kml$")) 
+file.remove(files_to_clear)
+
 
 ##burn to kml
 ##specify shape
@@ -107,11 +160,7 @@ kml_close(paste0("data/outgoing/",bname, "_PASSAGE_assessments", format(Sys.time
 ##now get the phase 2 sites only to add the habitat info
 ##bring in the data, make a html table of each row↑
 df <- import_pscis(workbook_name = 'pscis_phase2.xlsm') %>% 
-  make_kml_col() %>% 
-  group_split(site_id) %>% 
-  map(make_html_tbl) %>% 
-  bind_rows()
-
+  make_kml_col() 
 
 
 habitat_data <- import_fish_data() %>% 
@@ -145,6 +194,8 @@ habitat_data_summary <- left_join(
 
 
 
+
+
 ##lets make tables for each site that has habitat data for that site
 ##bring in the data, make a html table of each row
 hab_html_tbl <- habitat_data_summary %>% 
@@ -168,6 +219,10 @@ df_hab <- left_join(
 ) 
 
 
+
+```
+
+```{r}
 coords <- df_hab %>% select(easting, northing)
 proj4string <- sp::CRS("+init=epsg:32609")
 df_kml <- df_hab %>% 
@@ -184,7 +239,6 @@ shape = "http://maps.google.com/mapfiles/kml/shapes/fishing.png"
 kml_open(paste0("data/outgoing/",bname, "_HABITAT_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
 kml_layer(df_kml, shape = shape, colour = 'yellow', labels = label, html.table = df_kml$html_tbl, z.scale = 2, LabelScale = 1, size = 2)
 kml_close(paste0("data/outgoing/",bname, "_HABITAT_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
-
 ```
 
 ```{r zip-kml}

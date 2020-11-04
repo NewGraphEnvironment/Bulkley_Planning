@@ -75,21 +75,25 @@ make_html_tbl <- function(df) {
   df2 <- df %>% 
     dplyr::mutate(photo_link = paste0(
       'https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/', site_id,
-      '/crossing_all.JPG')) %>% 
-    dplyr::mutate(photo_link = cell_spec('crossing', "html", link = photo_link)) %>%
+      '/crossing_all.JPG'),
+      map_link = paste0(
+        'https://hillcrestgeo.ca/outgoing/fishpassage/projects/bulkley/FishPassage_', map_tile_display_name,
+        '.pdf') ) %>% 
+    dplyr::mutate(photo_link = cell_spec('crossing', "html", link = photo_link),
+                  map_link = cell_spec('mapsheet', "html", link = map_link)) %>%
     dplyr::select(road_name, crossing_subtype, cv_diam_m = diameter_or_span_meters,
                   cv_lngth_m = length_or_width_meters, out_drop_m = outlet_drop_meters, cv_slope = culvert_slope_percent, 
                   chan_wdth = downstream_channel_width_meters,
                   habitat_value, cv_lgth_score = culvert_length_score, embed_score, out_dro_score = outlet_drop_score,
                   culvert_slope_score, swr_score = stream_width_ratio_score, final_score,
-                  barrier_result, photo_link, assessment_comment)
+                  barrier_result, photo_link, map_link, assessment_comment)
   df <- df %>% 
     mutate(html_tbl = knitr::kable(df2, 'html', escape = F)%>% 
              # All cells get a border
              row_spec(0:nrow(df2), extra_css = "border: 1px solid black;") %>% 
              row_spec(0, background = "yellow") %>% 
              kableExtra::column_spec(column = ncol(df2), width_min = '2in') %>% 
-             kableExtra::column_spec(column = 1:16, width_min = '0.2in')
+             kableExtra::column_spec(column = 1:17, width_min = '0.2in')
     )
   return(df)
 }
