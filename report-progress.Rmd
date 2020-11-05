@@ -1,6 +1,6 @@
 ---
-title: "Bulkley River Watershed Group - Fish Passage Planning - Progress Report"
-author: "New Graph Environment"
+title: "Bulkley River Watershed Fish Passage Restoration - HCTF Project #6-288 - Progress Report"
+author: "Society for Ecosystem Restoration Northern BC"
 date: 
 output: html_document
 ---
