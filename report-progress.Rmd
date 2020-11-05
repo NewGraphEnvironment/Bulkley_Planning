@@ -5,13 +5,16 @@ date:
 output: html_document
 ---
 
-```{r setup, include=T}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include = TRUE, echo =FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE,
+                      fig.align="center", fig.width = 5.118, fig.height = 3.409,
+                      fig.path = ('fig/'))
+# knitr::opts_chunk$set(echo = TRUE)
 source('R/packages.R')
 source("R/functions.R")
 ```
 
-
+Preliminary results are also summarized in kml format here at https://github.com/NewGraphEnvironment/Bulkley_Planning/raw/master/data/outgoing/bulkley_progress_kml.zip
 ```{r import-pscis, eval=F}
 ##these are necessary for the leaflet map
 ##import the phase 1 data for CWF and turn into spatial file
@@ -250,7 +253,17 @@ zip::zipr("data/outgoing/bulkley_progress_kml.zip", files = files_to_zip)  ##it 
 ```
 
 
-```{r leaflet-map, eval=F}
+```{r leaflet-map, eval=T}
+##transfor to wsg84
+df_sf <- df_sf %>% 
+  st_transform(crs = 4326)
+
+##make colors for the priorities
+pal <- 
+   colorFactor(palette = c("red", "yellow", "green"), 
+               levels = c("Barrier", "Potential", "Passable"))
+
+
 map <- leaflet(height=500, width=780) %>%
   # leaflet() %>% 
   addTiles() %>%
@@ -266,60 +279,31 @@ map <- leaflet(height=500, width=780) %>%
   #              fillOpacity = 0.75, weight=5) %>%
   addLegend(
     position = "topright",
-    colors = c("red", "yellow"),
-    labels = c("Barrier assessments", "Habiat Confirmations"), opacity = 1,
-    title = "Elk River Watershed Group Fish Passage Restoration Planning",
-  ) %>% 
+    colors = c("red", "yellow", "green"),
+    labels = c("Barrier", "Potential Barrier", "Passable"), opacity = 1,
+    title = "Bulkley River Fish Passage Restoration Planning",
+  ) %>%
   # addAwesomeMarkers(lng = photo_metadata$lon_map,lat = photo_metadata$lat_map,
   #                   popup = leafpop::popupImage(photo_metadata$url, src = "remote"),
   #                   clusterOptions = markerClusterOptions(),
   #                   labelOptions = offset(c(0,0)),
   #                   label = paste0(photo_metadata$crossing_id, '_', photo_metadata$filename)) %>%
     addCircleMarkers(
-    data=table_overview_sf,
-    label = table_overview_sf$site,
-    popup = leafpop::popupTable(x = select((table_overview_sf %>% st_set_geometry(NULL)), 
-                                           Site = site, Priority = priority, Stream = stream_name, Road = road_name, Comments = comments),
+    data=df_sf,
+    label = df_sf$site_id,
+    popup = leafpop::popupTable(x = select((df_sf %>% st_set_geometry(NULL)), 
+                                           Site = site_id, Stream = stream_name, Road = road_name, 
+                                           Comments = assessment_comment),
                                 feature.id = F,
                                 row.numbers = F), 
     radius = 9,
-    fillColor = ~pal(priority),
+    fillColor = ~pal(barrier_result),
     color= "#ffffff",
     stroke = TRUE, 
     fillOpacity = 1.0,
     weight = 2,
     opacity = 1.0
   ) %>% 
-  leafem::addHomeButton(ext = raster::extent(filter(table_overview_sf, priority %ilike% 'High')),
-                        position = "topleft",
-                        group = 'High Priority Crossings') %>%
-    leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125000')),  ##note that poorman detaches geom somehow .  dplyr leaves the geom as the whole object.. too weird
-                        position = "topleft",
-                        group = '125000') %>%
-      leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125179')),
-                        position = "topleft", 
-                        group = '125179') %>% 
-        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125180')),
-                        position = "topleft",
-                        group = '125180') %>%
-        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125186')),
-                        position = "topleft",
-                        group = '125186') %>%
-        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125231')),
-                        position = "topleft",
-                        group = '125231') %>%
-        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125247')),
-                        position = "topleft",
-                        group = '125247') %>%
-        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '125253')),
-                        position = "topleft",
-                        group = '125253') %>%
-        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% '57687')), ##watch out here
-                        position = "topleft",
-                        group = '125345') %>%
-        leafem::addHomeButton(ext = raster::extent(poorman::filter(tracks, site %like% 'CV1')),
-                        position = "topleft",
-                        group = 'CV1') %>%
   addScaleBar(position = 'bottomleft', options = scaleBarOptions(imperial = FALSE)) %>% 
   addLayersControl(
     baseGroups = c(
@@ -334,3 +318,8 @@ map
 
 ```
 
+```{r include= FALSE, echo=FALSE, comment=NA, message=FALSE, warning=FALSE, eval=F}
+
+rmarkdown::render(input = paste0('report-progress.Rmd'),  
+                    output_file = 'docs/index.html') 
+```

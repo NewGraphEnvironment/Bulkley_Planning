@@ -8,4 +8,7 @@ pacman::p_load(
   knitr,
   kableExtra,
   plotKML,
-  magick)
+  magick,
+  leaflet,
+  leafem,
+  leafpop)
