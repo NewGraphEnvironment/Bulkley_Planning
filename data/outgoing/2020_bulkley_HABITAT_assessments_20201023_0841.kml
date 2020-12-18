@@ -1,0 +1,1419 @@
+<kml xmlns:xsd="http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd" xmlns:xmlns="http://www.opengis.net/kml/2.2/" version="1.0">
+  <Document>
+    <name>data/outgoing/2020_bulkley_HABITAT_assessments_20201023_0841.kml</name>
+    <open>1</open>
+    <Folder>
+      <name>SpatialPointsDataFrame</name>
+      <Style id="pnt1">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt2">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt3">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt4">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt5">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt6">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt7">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt8">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt9">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt10">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt11">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt12">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt13">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt14">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt15">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt16">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt17">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt18">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt19">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt20">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt21">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt22">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Style id="pnt23">
+        <LabelStyle>
+          <scale>1.0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <color>#ff00ffff</color>
+          <scale>2</scale>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+          </Icon>
+        </IconStyle>
+        <BalloonStyle>
+          <text>$[description]</text>
+        </BalloonStyle>
+      </Style>
+      <Placemark>
+        <name>3042-Barren Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt1</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Barren Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 3042 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 400 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3042/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Important migration corridor and areas with moderate value habitat for rearing and overwintering resident salmonids. Upstream of crossing is beaver influenced wetland for greater than 200m. Site located approximately 900m upstream of crossing. Multiple FISS sites with habitat details present near surveyed area. Area surveyed varied from cobble/boulder channel flowing freely to primarily glide habitat 60 - 100 cm in depth. Occasional pockets of gravels in channel at start of survey and some pools associated with large woody debris throughout. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Barren Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 3042 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 18.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 15.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 0.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 260 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3042/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Series of beaver dams present with impounded areas upstream ranging in length from 10 - 100m with heights ranging from 0.7 - 1.2m. Flooded forest and shrub areas transitions to small marsh with emergent aquatic vegetation and open water. Water depts over 1m. Good overwintering and rearing habitat for rainbow trout and CO if accessible from downstream. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.61431,54.50947,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>3054-Johnny David Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt2</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Johnny David Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 3054 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 350 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3054/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Pockets of gravels suitable for resident and anadromous (if present) salmonids throughout. Stream is steepest immediately below the North Road Forest Service Road then levels off with series of three beaver dams. No deep pools observed downstream of beaver dam area. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Johnny David Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 3054 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 5.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 725 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3054/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Substrate black from periphyton. Large woody debris and occasional pools providing cover. Stream winds through canyon section for approximately 300m after the first 100m of beaver influenced wetland located directly upstream of the culvert. Pockets of gravel suitable for resident (~20cm) salmonids. Fish observed (150mm) above the culvert approximately 100m. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.44785,54.59472,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>3139-Trib to McQuarrie Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt3</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> electrofishing </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Tributary to McQuarrie Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 3139 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.9 </td>
+   <td style="text-align:right;border: 1px solid black;"> 285 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3139/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat. Complex cover habitat in the form of overhanging vegetation, large woody debris and small woody debris. Infrequent deep pools and occasional pockets of gravels suitable for resident and adfluvial (if present) salmonids present. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Tributary to McQuarrie Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 3139 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 7.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 625 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/3139/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat. Abundant cover available as pools, undercut banks, overhanging vegetation, large woody debris and small woody debris. Extensive areas of gravels suitable for spawning for 20-50 cm salmonids. Fry observed throughout site. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.57722,54.56013,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>58159-McDowell Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt4</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> electrofishing </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> McDowell Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 58159 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 135 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/58159/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Site is located between confluence with the Bulkley River and Woodmere Nursery. Electrofished from confluence to approximately 25m from culvert outlet. Fish captured throughout with many fish in shallow pools and associated with large cobbles/boulder areas. Fry in large gravels/small cobbles. Well developed shrub riparian providing abundant overhanging vegetation for cover. Large woody debris abundant throughout the site. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> McDowell Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 58159 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 440 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/58159/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Site flows through the Woodmere Nursery from small culvert on burn pile access road to the Highway. Electrofishing conducted. Abundant cover available primarily as overhanging vegetation and cobbles. Upstream culvert under Highway 16 has been recently replaced by horizontal drilling. Baffles at upstream crossing. Coho fry captured below the Highway crossing. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-127.02042,54.67521,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>123445-Tyee Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt5</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Tyhee Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 123445 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 170 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123445/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat but important migration corridor. High conductivity and low flows at the time of survey. No barriers between culvert and Bulkley River. Goes subsurface near river flood plain, possibly at floodplain level. Mike Ridsdale (Office of Wet’suwet’en) reports CT attempting to ascend the culvert and 5lb Steelhead captured above the culvert in past. Some gravels suitable for CT spawning. Visual observations of fry/juveniles (3 @ 50mm, and 1 @ 90mm) unknown species. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Tyhee Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 123445 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 0.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 540 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123445/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat due to importance as migration corridor.  Low value for rearing, spawning and overwintering. Stagnant flow with aquatic vegetation and overhanging vegetation throughout. Slow to no flow, fine substrate throughout, at times 10-20 cm thick. Narrow channel, some riparian disturbance in areas from livestock. No barriers observed. Movement likely challenging with current water levels and flow levels. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-127.02626,54.68435,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>123446-Tyee Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt6</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Tyhee Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 123446 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 8.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 7.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 0.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 100 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123446/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Important migration corridor. Wetland habitat on private land. Beaver activity noted throughout area surveyed. Wetland habitat within area of cattle ranching/agriculture between Tyhee Lake Road and Tyhee Lake </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-127.02164,54.68711,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>123794-Tributary to Blunt Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt7</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Unnamed tributary to Blunt Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 123794 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 5.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 250 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123794/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Smaller stream with good flow and frequent patches of gravel suitable for spawning for CO or resident CT and DV. Bottom half of site is lower gradient than top. In top section occasional large woody debris steps of up to 40cm high. Pools infrequent, but some suitable for overwintering. FISS records indicate salmon species (SA) nearby. Surveyed for 350m upstream. Future fish sampling recommended. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Unnamed tributary to Blunt Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 123794 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.9 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 9.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 525 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123794/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Mature channel with decent complexity, abundant gravel suitable for CO or CT and DV spawning. Some small woody debris/large woody debris steps (30-50cm) intermittently starting about 400m above the culvert. Fish observed approximately 500m upstream of the culvert. Permanent falls at the top of the site. Few pools suitable for overwintering and rearing for resident CT and DV . Future fish sampling recommended. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-127.18068,55.09399,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>123795-Tributary to Blunt Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt8</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Unnamed tributary to Blunt Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 123795 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.4 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 200 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123795/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Smaller stream with somewhat low complexity. Occasional deep pools and primarily glide habitat. Abundant gravels present but only patches were unembedded. FISS records indicate salmon species (SA) nearby within same stream network. Future fish sampling recommended. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Unnamed tributary to Blunt Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 123795 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.4 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 7.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 650 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/123795/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Deep glide character prevalent, gradients leveling out at top end of site, with primarily shrub and wetland riparian area. Top end of site is a Ford (#123796). Very occasional pockets of gravel suitable for spawning. Future fish sampling recommended. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-127.18596,55.09523,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>124487-Porphyryr Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt9</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Porphyry Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 124487 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 10.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 9.9 </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 540 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124487/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat.  High flows at time of survey.  Large system with cascade-boulder habitat in area surveyed. Some pockets of gravel present. Habitat would be primarily refuge behind boulders with rare large woody debris and infrequent pools. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Porphyry Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 124487 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 11.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 10.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 145 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124487/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Approximately 40cm long salmonid observed trying to ascend culvert.  No barriers from highway to the Bulkley River mainstem with cascade-boulder habitat present. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-127.38233,55.15616,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>124500-Helps Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt10</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Helps Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 124500 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 0.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1100 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124500/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Beaver influenced wetland upstream. Multiple channels through large wetland area. Top end of site was accessed from road on left bank of stream. Beaver dam area at top end of site with approximately 12-14m wide widths with depths approximately 1m deep. Landowner reports drop in numbers of fry/parr in stream over last 20 years. Staff gauge present just upstream of crossing. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Helps Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 124500 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 415 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124500/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat. Extensive cover as small woody debris, overhanging vegetation and deep pools. Gravels suitable for spawning throughout. Limited riparian buffer along agricultural field. Downstream crossing on railway is passable. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-127.02260,54.65949,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>124501-Moan Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt11</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> minnowtrapping </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Moan Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 124501 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 6.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 520 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124501/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat. Culvert on Larson Road is baffled, embedded and passable for adult salmonids (resident and anadromous). Complex habitat with abundant gravels suitable for spawning. Healthy riparian with overhanging vegetation, large woody debris and small woody debris forming primary cover types. Debris jams present from 350m upstream of crossing with heights ranging from 0.4 - 1m high. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Moan Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 124501 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 450 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124501/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat. Pockets of gravel suitable for spawning throughout. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.97577,54.63190,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>124504-Coffin Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt12</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> minnowtrapping </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Coffin Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 124504 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 5.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 415 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/124504/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat. Abundant cover with undercut banks, large woody debris and overhanging vegetation throughout. High complexity with occasional patches of gravels suitable for spawning present. Stream visited upstream approximately 2.2km at powerline ford crossing. High value habitat at this point as well. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.91959,54.62082,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>195288-Gibson Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt13</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> uav_survey </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Gibson Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 195288 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.9 </td>
+   <td style="text-align:right;border: 1px solid black;"> 0.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 250 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/195288/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Beaver influenced wetland complexes with narrow channels throughout. Substrate primarily fines in area surveyed but sections of gravels present near culvert and suspect gravels at outlets of beaver dams. Challenging survey conditions due to wetland character of and thick willow riparian. Could hear water flowing through beaver dam near bottom end of site. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.81928,54.59184,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>195290-Gibson Creek-Barrier-Medium habitat value</name>
+        <styleUrl>#pnt14</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> electrofishing </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> minnowtrapping </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> uav_survey </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Gibson Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 195290 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.4 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 150 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;"> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/195290/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Well developed shrub riparian vegetation providing cover along with small woody debris, large woody debris and undercut banks. Occasional pockets of gravel but substrate composed primarily of fines. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Gibson Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 195290 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 150 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/195290/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat for CO rearing. First approximately 50 upstream of Highway 16 culvert is shrub/forest area with undercut banks as the dominant form of cover. Upstream of this location there is a transition to dense shrub and grass with narrow and deep channel. Beaver influence apparent. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.83290,54.59332,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>197360-Riddeck Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt15</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> electrofishing </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> uav_survey </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Riddeck Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 197360 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 300 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/197360/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Site transitions from small stream with primarily undercut banks for cover to wide channel wetland habitat approximately 200m downstream of culvert due to beaver activity. Recent burn within forest on left bank of stream. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Riddeck Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 197360 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1200 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/197360/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat for fry and juvenile salmonid rearing. Numerous fry observed throughout. Electrofishing site nested within this site. Cover available in all forms with pools suitable for juvenile RB and CO overwintering. Abundant gravels and small cobbles throughout suitable for CO or RB/ST spawning. Well developed shrub and deciduous riparian. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.70925,54.05804,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1800060-Richfield Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt16</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> minnowtrapping </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Richfield Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800060 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 13.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 9.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1200 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800060/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat, large stream with mature cottonwood riparian zone. Good channel complexity including numerous deep pools up to 2m and frequent glide sections 1m deep throughout. Extensive areas of gravel suitable for spawning for resident and anadromous species. Rangeland with several cattle access areas. Historic landslide at top end of site. Over wintering habitat for all life stages. Beaver evidence with blown out dam present. Abundant large woody debris. Future fish sampling recommended to determine densities of target species upstream and downstream of culverts. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Richfield Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800060 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 12.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 8.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 300 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800060/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate to high value habitat. Channel structure seems to be simplified downstream of culvert for about 80m likely due to high velocities out of pipes and there are no pools in that section. Stream flows through residential area with some deep pools, glides to over 1m deep spaced primarily on corners. Riparian is mature Cottonwood but is very narrow in most areas where stream was surveyed and removed at some spots near houses. Evidence of large woody debris removal from channel (chainsaw) and some corners are armoured with rock, concrete and old vehicles. Some unembedded gravels present throughout. Future fish sampling recommended to determine densities of target species upstream and downstream of culverts. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.33653,54.51553,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1800062-Byman Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt17</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> minnowtrapping </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Byman Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800062 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 12.9 </td>
+   <td style="text-align:right;border: 1px solid black;"> 7.9 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1400 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800062/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat, mature cottonwood forest. Riparian degraded in places by cattle impacts. Gravels suitable for CO or resident species rare in survey area. Some deeper pools suitable for CH, CO overwintering. Local streamkeepers have observed CO fry migrating up culvert. Several sections of landslide on creek right bank. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Byman Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800062 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 8.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 7.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 0.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 330 </td>
+   <td style="text-align:left;border: 1px solid black;"> NA </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800062/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Site starts downstream of CN rail bridge, far more complex than area immediately below highway culvert. Abundant cover in the form of undercut banks, overhanging vegetation, and extensive deep glide areas (50-70 cm deep at the time of survey). Well developed and anchored banks from riparian vegetation creating good structure for all life stages of salmonids. Substrate has algae growth layer, large gravels and small cobbles throughout that may be suitable for salmon spawning. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Byman Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800062 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds1 </td>
+   <td style="text-align:right;border: 1px solid black;"> 11.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 9.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 300 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800062/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat. Straight channel with low complexity. Cattle impacts evident on banks throughout. Suspect channel has been modified. Flows through rangeland. Minimal cover with no pools, and extensive riffles. May be valuable fry rearing habitat especially in low velocities margins. Also accessed stream downstream of CN rail bridge. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.42220,54.51882,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1800076-Barren Creek-Passable-High habitat value</name>
+        <styleUrl>#pnt18</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Barren Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800076 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 20 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800076/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Approximately 25m from outlet of culvert to Bulkley River. All habitat is in the floodplain. Currently only 1 of 2 pipes is functioning and there is some oxidized ooze at the outlet of non-functioning crossing. Channel is all gravel, 2-5cm. Important migration corridor. See upstream crossing for more detail. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.52172,54.46280,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1800092-Tributary to Buck Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt19</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Unnamed Tributary to Buck Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800092 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 70 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800092/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Surveyed to confluence with Buck Creek (approximately 70m). Didymo potentially present (photo). Abundant small woody debris and overhanging vegetation near confluence. No barriers observed, fish (130mm) in culvert outlet pool. Future fish sampling recommended. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Unnamed Tributary to Buck Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800092 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.4 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.5 </td>
+   <td style="text-align:right;border: 1px solid black;"> 535 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800092/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Moderate value habitat for rearing, infrequent shallow pools and rare pockets of gravel suitable for spawning. Stream appears to be aggraded throughout with side bars common. Stream connects to buck Creek with known CO and wetland areas mapped upstream (approx. 200m). young of year salmonid (110mm) observed near start of survey, upstream of culvert. Future fish sampling recommended. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.63224,54.23614,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1800213-Johnny David Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt20</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> electrofishing </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> minnowtrapping </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Johnny David Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800213 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 6.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.4 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 690 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800213/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat. Stream flows through pastureland for first 300 - 400m up until powerline. Mature cottonwood riparian with only narrow strips present in multiple locations. Multiple areas of bank erosion where the riparian has been damaged or missing. Patches of gravels present suitable for resident as well as anadromous salmonids. Some deeper pools for juvenile rearing and overwintering. Top end of site had less large woody debris and undercut banks and more small woody debris and overhanging vegetation. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Johnny David Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1800213 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 5.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.6 </td>
+   <td style="text-align:right;border: 1px solid black;"> 300 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1800213/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat with deep pools, large woody debris, undercut banks and overhanging vegetation providing cover. Gravels present suitable for RB and CO spawning. Electrofished. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.36956,54.52188,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1801069-Barren Creek-Passable-High habitat value</name>
+        <styleUrl>#pnt21</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Barren Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1801069 </td>
+   <td style="text-align:left;border: 1px solid black;"> us </td>
+   <td style="text-align:right;border: 1px solid black;"> 7.2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.0 </td>
+   <td style="text-align:right;border: 1px solid black;"> 800 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1801069/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat, with known CO use, possibly other salmonids. MoTI dredged upstream of culvert annually which requires fry salvage with water running over highway at times. Active cut approximately 100m upstream of culvert, constantly depositing sediment into stream. Potential to landslide and block stream flow. Extensive areas of gravels suitable for CO spawning. Mature Cottonwood riparian surrounding with persistent land impacts on right bank and armouring on private road. Few pools, undercut banks and overhanging vegetation providing dominant cover throughout. Large woody debris present, deep pools are rare, some glides up to 50cm deep. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Barren Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1801069 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 4.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 1.8 </td>
+   <td style="text-align:right;border: 1px solid black;"> 240 </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1801069/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> Potentially high value habitat. Site is in between highway 16 and railway. Area dredged by MoTI and potentially CN rail. Area has extensive gravel for spawning with salmonid fry present below crossing. Important migration corridor. No pools or overhanging habitat observed. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.52434,54.46354,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1805606-Moan Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt22</styleUrl>
+        <description><![CDATA[NA]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.96903,54.63316,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1805608-Coffin Creek-Barrier-High habitat value</name>
+        <styleUrl>#pnt23</styleUrl>
+        <description><![CDATA[<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> gazetted_names </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> site_id </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> location </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_channel_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> avg_wetted_width_m </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> average_gradient_percent </th>
+   <th style="text-align:right;border: 1px solid black;background-color: yellow !important;"> survey_length_m </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> minnowtrapping </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> photo_link </th>
+   <th style="text-align:left;border: 1px solid black;background-color: yellow !important;"> comments </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;border: 1px solid black;"> Coffin Creek </td>
+   <td style="text-align:right;border: 1px solid black;"> 1805608 </td>
+   <td style="text-align:left;border: 1px solid black;"> ds </td>
+   <td style="text-align:right;border: 1px solid black;"> 5.3 </td>
+   <td style="text-align:right;border: 1px solid black;"> 3.7 </td>
+   <td style="text-align:right;border: 1px solid black;"> 2 </td>
+   <td style="text-align:right;border: 1px solid black;"> 300 </td>
+   <td style="text-align:left;border: 1px solid black;"> yes </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 0.5in; "> <a href="https://github.com/NewGraphEnvironment/Bulkley_Planning/tree/master/data/photos/1805608/crossing_all.JPG" style="     ">crossing</a> </td>
+   <td style="text-align:left;border: 1px solid black;min-width: 4in; "> High value habitat. CN crossing has had Newbury riffles constructed to decrease the size of the outlet drop but drop still present. Abundant gravels suitable for spawning CH and CO present. Some deep pools available for fry/parr overwintering. No barriers to Bulkley River mainstem. </td>
+  </tr>
+</tbody>
+</table>]]></description>
+        <Point>
+          <extrude>1</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-126.91938,54.62102,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
