@@ -14,17 +14,14 @@ source('R/packages.R')
 source("R/functions.R")
 ```
 
-<br><br><br><br>
+<br><br>
 
  <font size="6"> **WE HAVE MOVED!!!** </font>
  
- 
-<br>
-
  <font size="4"> Please see preliminary results [here at our new reporting site](https://newgraphenvironment.github.io/fish_passage_bulkley_2020_reporting/) </font>
 
 
-```{r}
+```{r, out.width = "80%"}
 knitr::include_graphics("fig/hctf_new_logolarge.jpg")
 
 # with data also summarized in kml format [here](https://github.com/NewGraphEnvironment/Bulkley_Planning/raw/master/data/outgoing/bulkley_progress_kml.zip)
