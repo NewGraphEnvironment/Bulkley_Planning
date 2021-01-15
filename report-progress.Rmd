@@ -14,7 +14,22 @@ source('R/packages.R')
 source("R/functions.R")
 ```
 
-Preliminary results are also summarized in kml format here at https://github.com/NewGraphEnvironment/Bulkley_Planning/raw/master/data/outgoing/bulkley_progress_kml.zip
+<br><br><br><br>
+
+ <font size="6"> **WE HAVE MOVED!!!** </font>
+ 
+ 
+<br>
+
+ <font size="4"> Please see preliminary results [here at our new reporting site](https://newgraphenvironment.github.io/fish_passage_bulkley_2020_reporting/) </font>
+
+
+```{r}
+knitr::include_graphics("fig/hctf_new_logolarge.jpg")
+
+# with data also summarized in kml format [here](https://github.com/NewGraphEnvironment/Bulkley_Planning/raw/master/data/outgoing/bulkley_progress_kml.zip)
+```
+
 ```{r import-pscis, eval=F}
 ##these are necessary for the leaflet map
 ##import the phase 1 data for CWF and turn into spatial file
@@ -34,7 +49,7 @@ pscis_reassessments_sf <-  import_pscis(workbook_name = 'pscis_reassessments.xls
                crs = 26909, remove = F)
 ```
 
-```{r burn-kmls}
+```{r burn-kmls, eval=FALSE}
 ##get the names of your pscis files
 workbooks <-  list.files(path = 'data', pattern = "pscis", all.files = F) %>% 
   grep(pattern = '~', invert = T, value = T)
@@ -159,7 +174,7 @@ kml_close(paste0("data/outgoing/",bname, "_PASSAGE_assessments", format(Sys.time
 
 ```
 
-```{r summarise-habitat}
+```{r summarise-habitat, eval=F}
 ##now get the phase 2 sites only to add the habitat info
 ##bring in the data, make a html table of each row↑
 df <- import_pscis(workbook_name = 'pscis_phase2.xlsm') %>% 
@@ -225,7 +240,7 @@ df_hab <- left_join(
 
 ```
 
-```{r}
+```{r eval=FALSE}
 coords <- df_hab %>% select(easting, northing)
 proj4string <- sp::CRS("+init=epsg:32609")
 df_kml <- df_hab %>% 
@@ -244,7 +259,7 @@ kml_layer(df_kml, shape = shape, colour = 'yellow', labels = label, html.table =
 kml_close(paste0("data/outgoing/",bname, "_HABITAT_assessments", format(Sys.time(),"_%Y%m%d_%H%M.kml")))
 ```
 
-```{r zip-kml}
+```{r zip-kml, eval=F}
 ##now we will zip up the kml files in the data folder and rename with kmz
 files_to_zip <- paste0("data/outgoing/", list.files(path = "data/outgoing/", pattern = "\\.kml$"))  ##this used to includes the planning file which we don't want to do so watch out
 zip::zipr("data/outgoing/bulkley_progress_kml.zip", files = files_to_zip)  ##it does not work to zip to kmz!!
@@ -253,7 +268,7 @@ zip::zipr("data/outgoing/bulkley_progress_kml.zip", files = files_to_zip)  ##it 
 ```
 
 
-```{r leaflet-map, eval=T}
+```{r leaflet-map, eval=F}
 ##transfor to wsg84
 df_sf <- df_sf %>% 
   st_transform(crs = 4326)
@@ -318,7 +333,7 @@ map
 
 ```
 
-```{r include= FALSE, echo=FALSE, comment=NA, message=FALSE, warning=FALSE, eval=F}
+```{r run, include= FALSE, echo=FALSE, comment=NA, message=FALSE, warning=FALSE, eval=F}
 
 rmarkdown::render(input = paste0('report-progress.Rmd'),  
                     output_file = 'docs/index.html') 

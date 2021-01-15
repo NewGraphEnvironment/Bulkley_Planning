@@ -21,6 +21,15 @@ df <- sf::st_read(
   layer = "gitxsan") %>% 
   sf::st_transform(crs = 3005) ##put in same crs as our pscis_modelled_combined layer
 
+##EDIT 20210106 - there is an error here where we lost a couple of digits at 137 so we add 2 to everything above that
+df <- df %>% 
+  mutate(map_ref_number = as.numeric(map_ref_number)) %>% 
+  mutate(correction = case_when(map_ref_number > 136 ~ map_ref_number + 2,
+                                T ~ map_ref_number)) %>% 
+  mutate(map_ref_number = correction) %>% 
+  select(-correction)
+
+
 # add a unique id
 df$misc_point_id <- seq.int(nrow(df))
 
@@ -295,8 +304,6 @@ dbClearResult(query)
 
 n_distinct(pscis_info$blue_line_key) ##365 blue line keys
 
-test <- pscis_info %>% 
-  filter(!is.na(blue_line_key))
 
 
 ##remove a few uneeded columns
@@ -344,6 +351,18 @@ df_joined <- left_join(
 n_distinct(df_joined$blue_line_key) ##366 crossings with blue_line_key - why is this not 365????
 n_distinct(df_joined$pscis_model_combined_id)
 n_distinct(df_joined$downstream_route_measure)
+
+####edit 20200106
+##here we pull out the ones that are in the skeena scope for Kiah
+ids_to_pull <- c(70, 78, 87, 93, 97, 103, 104, 106, 116, 44, 76, 77, 98, 112, 139, 133)
+
+df_kiah <- df_joined %>% 
+  filter(map_ref_number_sfc %in% ids_to_pull) %>% 
+  select(map_ref_number_sfc, everything()) %>% 
+  mutate(description = map_ref_number_sfc)
+
+# ##burn to a kml for Kiah
+# st_write(df_kiah, 'data/GIS/GWA_SERN_skeena_sern.kml', driver = 'kml', delete_dsn = T)
 
 ##for the deliverables to the FN and for the permit application and to save time we want high priorities only
 ##we can filter out sites outside the BULK Morr later
